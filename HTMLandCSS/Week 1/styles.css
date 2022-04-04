@@ -1,0 +1,20 @@
+body {
+    background-color: #A6F5AD;
+    font-family:'Roboto Mono', monospace;
+    font-weight: 300;
+    margin: 3rem;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.main {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.image {
+    margin-right: 4rem;
+}
