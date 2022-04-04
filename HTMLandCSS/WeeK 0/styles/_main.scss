@@ -1,0 +1,100 @@
+@use 'variables';
+
+main {
+    color: variables.$body-color;
+}
+
+
+#Home {
+    background-color: variables.$section-color;
+    margin-bottom: 40px;
+    padding: 5px 0px 10px 0px;
+}
+
+#Bio {
+    background-color: variables.$section-color;
+    margin-bottom: 40px;
+    padding: 5px 0px 10px 0px;
+}
+
+#Gallery {
+    background-color: variables.$section-color;
+    margin-bottom: 40px;
+    padding: 5px 0px 10px 0px; 
+}
+
+#Contact {
+    background-color: variables.$section-color;
+    margin-bottom: 20px;
+    padding: 5px 0px 10px 0px;
+}
+
+h2{
+    font-family: variables.$heading-font;
+    margin: 10px;
+}
+
+h3{
+    font-family: variables.$main-font;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+.mdna01{
+    margin: 0px 10px 5px 10px;
+    width: 250px;
+    height: auto;
+    border: white 5px solid;
+    border-radius: 3px;
+}
+
+.mdna02 {
+    margin: 0px 0px 5px 10px;
+    width: 250px;
+    height: auto;
+    border: white 5px solid;
+    border-radius: 3px;
+}
+
+#here {
+    color: variables.$body-color;
+    text-decoration: underline;
+    :hover{
+        color: variables.$body-color;
+        text-decoration: underline;
+    }
+}
+
+.top {
+    font-family: variables.$heading-font;
+    font-weight: bold;
+    text-align: right;
+    position: sticky;
+    bottom: 0;
+    margin-right: 10px;
+    text-decoration: none;
+    :hover {
+        color: variables.$body-color;
+        text-decoration: underline;
+    }
+
+}
+
+a {
+    color: variables.$body-color;
+    text-decoration: none;
+    :hover {
+        color: variables.$body-color;
+        text-decoration: underline;
+    }
+}
+
+form {
+    margin: 0px 0px 0px 10px;
+}
+
+button {
+    background-color: variables.$body-color;
+    color: variables.$section-color;
+}
+

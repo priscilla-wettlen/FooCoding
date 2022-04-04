@@ -1,0 +1,8 @@
+@use 'variables';
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: variables.$body-color;
+    margin: 30px 0px 30px 0px;
+}

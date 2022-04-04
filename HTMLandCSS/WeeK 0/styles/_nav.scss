@@ -1,0 +1,20 @@
+@use 'variables';
+
+nav {
+    font-family: variables.$heading-font;
+    
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    list-style: none;
+    margin-top: 10px;
+    
+}
+
+li {
+    padding-right: 20px;
+}
+
