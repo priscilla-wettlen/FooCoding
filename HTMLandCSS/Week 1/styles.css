@@ -21,3 +21,7 @@ h1 {
 .image {
     margin-right: 4rem;
 }
+
+img {
+    border-radius: 360px;
+}
