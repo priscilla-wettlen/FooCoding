@@ -18,6 +18,11 @@ h1 {
     margin-bottom: 3rem;
 }
 
+h3 {
+    font-weight: 400;
+    color: #F25244;
+}
+
 .main {
     display: flex;
     justify-content: flex-start;
@@ -29,6 +34,11 @@ h1 {
 
 img {
     border-radius: 360px;
+}
+
+.image_caption {
+    color: #F25244;
+    text-align: center;
 }
 
 .skills_content {
