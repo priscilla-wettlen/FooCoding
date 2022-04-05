@@ -7,7 +7,10 @@ body {
 
 h1 {
     font-weight: 400;
-    font-size: 3rem;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
 }
 
 .main {
