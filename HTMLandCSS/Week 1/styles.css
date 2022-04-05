@@ -8,6 +8,7 @@ body {
 h1 {
     font-weight: 400;
     font-size: 4rem;
+    
     display: flex;
     justify-content: center;
     margin-bottom: 3rem;
@@ -24,4 +25,9 @@ h1 {
 
 img {
     border-radius: 360px;
+}
+
+.skills_content {
+    display: flex;
+    justify-content:flex-start;
 }
