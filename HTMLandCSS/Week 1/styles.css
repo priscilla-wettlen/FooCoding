@@ -5,10 +5,14 @@ body {
     margin: 3rem;
 }
 
+mark {
+    background-color: white;
+    color: #F25244;
+}
+
 h1 {
     font-weight: 400;
     font-size: 4rem;
-    
     display: flex;
     justify-content: center;
     margin-bottom: 3rem;
@@ -30,4 +34,8 @@ img {
 .skills_content {
     display: flex;
     justify-content:flex-start;
+}
+
+.skills_1 {
+    margin-right: 5rem;
 }
