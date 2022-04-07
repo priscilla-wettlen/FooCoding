@@ -49,3 +49,16 @@ img {
 .skills_1 {
     margin-right: 5rem;
 }
+
+ul {
+    list-style: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: #F25244;
+    text-decoration: underline;
+}
