@@ -1,64 +1,9 @@
-body {
-    background-color: #A6F5AD;
-    font-family:'Roboto Mono', monospace;
-    font-weight: 300;
-    margin: 3rem;
-}
+/* colors:
+greeen: #A6F5AD
+red-orange: #F25244
 
-mark {
-    background-color: white;
-    color: #F25244;
-}
+*/
 
-h1 {
-    font-weight: 400;
-    font-size: 4rem;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 3rem;
-}
-
-h3 {
-    font-weight: 400;
-    color: #F25244;
-}
-
-.main {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.image {
-    margin-right: 4rem;
-}
-
-img {
-    border-radius: 360px;
-}
-
-.image_caption {
-    color: #F25244;
-    text-align: center;
-}
-
-.skills_content {
-    display: flex;
-    justify-content:flex-start;
-}
-
-.skills_1 {
-    margin-right: 5rem;
-}
-
-ul {
-    list-style: none;
-}
-
-a{
-    color: black;
-    text-decoration: none;
-}
-a:hover{
-    color: #F25244;
-    text-decoration: underline;
+img{
+    width: 400px;
 }
