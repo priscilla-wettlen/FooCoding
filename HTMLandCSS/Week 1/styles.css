@@ -4,6 +4,50 @@ red-orange: #F25244
 
 */
 
+body {
+    background-image: linear-gradient(#A6F5AD, 30%,#f7b1ab);
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+header {
+    position: sticky;
+    top: 0.01px;
+    
+}
+
+.topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+
+ul {
+    list-style: none;
+    display: flex;
+
+}
+
+li {
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+#Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-family: 'Comfortaa',cursive;
+    font-size: 144px;
+}
+
+
 img{
     width: 400px;
 }
