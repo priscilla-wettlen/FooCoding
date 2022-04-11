@@ -22,6 +22,8 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    color: #F25244;
+    opacity: 0.5;
     
 }
 
@@ -36,6 +38,11 @@ li {
     padding-right: 10px;
 }
 
+mark{
+    background-color: white;
+    color: #F25244;
+}
+
 #Home {
     display: flex;
     flex-direction: column;
@@ -45,6 +52,12 @@ li {
 h1{
     font-family: 'Comfortaa',cursive;
     font-size: 144px;
+    color: #F25244;
+    margin-bottom: 50px;
+}
+
+.tagline {
+    color: #F25244;
 }
 
 
