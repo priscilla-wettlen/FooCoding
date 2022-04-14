@@ -12,6 +12,8 @@ body {
     font-family: 'Roboto Mono', monospace;
 }
 
+/* header and navbar */
+
 header {
     position: sticky;
     top: 0.01px;
@@ -43,6 +45,8 @@ mark{
     color: #F25244;
 }
 
+/* Home */
+
 #Home {
     display: flex;
     flex-direction: column;
@@ -58,9 +62,29 @@ h1{
 
 .tagline {
     color: #F25244;
+    margin-bottom: 50px;
 }
 
+/* About */
 
+#About {
+    margin: 30px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 img{
     width: 400px;
+    border-radius: 50%;
+    padding-bottom: 20px;
+    
 }
