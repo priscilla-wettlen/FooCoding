@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto+Mono:wght@300;400&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://kit.fontawesome.com/fdc79b6d81.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Priscilla Silva | Online CV</title>
@@ -25,32 +26,34 @@
 </header>
 <body>
     <main>
-        <section id="Home">
+        <section id="Home" class="animate__animated animate__fadeInDown">
             <h1>priscilla silva</h1>
-            <h2 class="tagline"><mark>&nbsp;./Front-end Developer&nbsp;</mark></h2>
+                <h2 class="tagline"><mark>&nbsp;./Front-end Developer&nbsp;</mark></h2>
         </section>
         <section id="About">
             <figure>
                 <img src="images/priscilla_blue_sq.png" alt="My profile picture">
-                <figcaption><mark>&nbsp;Yeah, that's me <i class="fas fa-level-up-alt"></i>&nbsp;</mark></figcaption>
+                <figcaption>
+                    <mark>&nbsp;Yeah, that's me <i class="fas fa-level-up-alt"></i>&nbsp;</mark>
+                </figcaption>
             </figure>
             <div class="about_content">
-            <h2 class="about_headline"><mark>&nbsp;./About Me&nbsp;</mark></h2>
-                <p class="about_info">
-                        My name is Priscilla Silva and I'm a front-end developer based in Malmö, Sweden. 
-                </p>
-                <p class="about_info">
-                        I have a background in art history and interaction design. It was when I studied the latter
-                        that my interest for technology began and I decided to take road of programming. At the moment
-                        I am a student at Foo Coding, where I'm preparing to become a full-stack web developer.
-                </p>
-                <p class="about_info">
-                        When I am not coding I like to paint, read, exercise, listen to music and take long walks with my dog Iroko.
-                </p>
+                <h2 class="about_headline"><mark>&nbsp;./About Me&nbsp;</mark></h2>
+                    <p class="about_info">
+                            My name is Priscilla Silva and I'm a front-end developer based in Malmö, Sweden. 
+                    </p>
+                    <p class="about_info">
+                            I have a background in art history and interaction design. It was when I studied the latter
+                            that my interest for technology began and I decided to take road of programming. At the moment
+                            I am a student at Foo Coding, where I'm preparing to become a full-stack web developer.
+                    </p>
+                    <p class="about_info">
+                            When I am not coding I like to paint, read, exercise, listen to music and take long walks with my dog Iroko.
+                    </p>
                 <div class="social_icons">
-                    <i class="fab fa-github"></i>
-                    <i class="fab fa-linkedin"></i>
-                    <i class="fab fa-instagram"></i>
+                    <a class="social_link" href="https://github.com/priscilla-silva" target="blank"><i class="fab fa-github"></i></a>
+                    <a class="social_link" href="https://www.linkedin.com/in/priscilla-silva-7aba25167/" target="blank"><i class="fab fa-linkedin"></i></a>
+                    <a class="social_link" href="https://www.instagram.com/prissmacolor/" target="blank"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </section>
@@ -116,7 +119,6 @@
                 <img class="skills_icon" src="images/icon_skills (1).png" alt="Skills">
             </figure>
             <div class="skills_info">
-                
                     <div class="skills_content">
                         <h2><mark>&nbsp;./My Skill Set&nbsp;</mark></h2>
                             <p>HTML&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -194,8 +196,17 @@
                                         <i class="cursive">Intermediate</i>
                                     </span>
                                 </p>
-                        </div>
-                    
+                        </div>        
+                </div>
+        </section>
+        <section id="References">
+            <h2 class="headline">References</h2>
+            <div class="ref_content">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="blank"><p>MDN Web Docs</p></a>
+                <a href="https://www.geeksforgeeks.org/web-development/?ref=shm" target="blank"><p>GeeksforGeeks</p></a>
+                <a href="https://www.w3schools.com/graphics/svg_rect.asp" target="blank"><p>W3Schools</p></a>
+                <a href="https://color.adobe.com/create/color-wheel" target="blank"><p>Adobe Color</p></a>
+                <a href="https://www.photopea.com/" target="blank"><p>Photopea</p></a>
             </div>
         </section>
     </main>
@@ -204,9 +215,9 @@
     <div class="bottom">
         <p class="logo">© priscilla silva&nbsp;&nbsp;&nbsp;2022</p>
         <div class="social_icons_bottom">
-            <i class="fab fa-github"></i>
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-instagram"></i>
+            <a class="social_link_b" href="https://github.com/priscilla-silva" target="blank"><i class="fab fa-github"></i></a>
+            <a class="social_link_b" href="https://www.linkedin.com/in/priscilla-silva-7aba25167/" target="blank"><i class="fab fa-linkedin"></i></a>
+            <a class="social_link_b" href="https://www.instagram.com/prissmacolor/" target="blank"><i class="fab fa-instagram"></i></a>
         </div>
     </div>
 </footer>

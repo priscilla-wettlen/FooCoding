@@ -108,6 +108,13 @@ img{
     margin-top: 50px;
 }
 
+.social_link {
+    color: #1e00ff;
+}
+.social_link:hover {
+    color: #A6F5AD;
+}
+
 /* Education */
 
 #Education {
@@ -118,7 +125,6 @@ img{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    
 }
 
 .edu_info {
@@ -206,6 +212,7 @@ rect {
 }
 
 /* Footer */
+
 footer {
     background-color: #1e00ff;
     height: 80px;
@@ -227,4 +234,27 @@ footer {
     color: #A6F5AD;
     font-size: 28px;
     padding-top: 20px;
+}
+
+.social_link_b{
+    color: #A6F5AD;
+}
+.social_link_b:hover{
+    color: white;
+}
+
+/* References */
+#References {
+    margin: 30px;
+    padding: 30px;
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 30px;
+    
+    
+}
+
+.ref_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px 0px 0px;
 }
