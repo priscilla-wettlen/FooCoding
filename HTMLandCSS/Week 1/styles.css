@@ -89,6 +89,11 @@ h1{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    line-height: 18px;
+}
+
+.about_content {
+    padding-right: 30px;
 }
 
 figure {
@@ -119,6 +124,7 @@ img{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    
 }
 
 .edu_info {
@@ -146,7 +152,8 @@ img{
 .work_info {
     display: flex;
     flex-direction: column;
-    line-height: 0px;
+    padding-right: 30px;
+    line-height: 18px;
 }
 
 .work_icon {
@@ -157,12 +164,14 @@ img{
 
 #Skills {
     margin: 30px;
+    margin-bottom: 100px;
     padding: 30px;
     background-color: rgb(255, 255, 255, 0.5);
     border-radius: 30px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
 }
 
 .skills_info {
@@ -200,4 +209,28 @@ svg {
 
 rect {
     color: #1e00ff;
+}
+
+/* Footer */
+footer {
+    background-color: #1e00ff;
+    height: 80px;
+    padding: 30px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    font-family: 'Comfortaa', cursive;
+    color:#A6F5AD;
+    font-size: 24px;
+}
+
+.social_icons_bottom {
+    color: #A6F5AD;
+    font-size: 28px;
+    padding-top: 20px;
 }
