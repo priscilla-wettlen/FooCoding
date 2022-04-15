@@ -1,9 +1,3 @@
-/* colors:
-greeen: #A6F5AD
-red-orange: #F25244
-
-*/
-
 body {
     /*background-image: linear-gradient(#A6F5AD, 30%,#f7b1ab);*/
     background-color: #A6F5AD;
@@ -156,6 +150,10 @@ img{
     line-height: 18px;
 }
 
+.date {
+    font-size: 14px;
+}
+
 .work_icon {
     width: 300px;
 }
@@ -169,29 +167,25 @@ img{
     background-color: rgb(255, 255, 255, 0.5);
     border-radius: 30px;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
+    flex-direction: row;
 }
 
 .skills_info {
     display: flex;
-    flex-direction: column;
-    
-    
+    justify-content: space-between;
 }
 
 .skills_content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    line-height: 10px;
 }
 
 .languages {
-    padding-left: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
+    padding-left: 100px;
+    line-height: 10px;
     
 }
 
