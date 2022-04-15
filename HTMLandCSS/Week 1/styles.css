@@ -5,7 +5,8 @@ red-orange: #F25244
 */
 
 body {
-    background-image: linear-gradient(#A6F5AD, 30%,#f7b1ab);
+    /*background-image: linear-gradient(#A6F5AD, 30%,#f7b1ab);*/
+    background-color: #A6F5AD;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -13,7 +14,7 @@ body {
 }
 
 .headline {
-    color: #F25244;
+    color: #1e00ff;
 }
 
 /* header and navbar */
@@ -28,8 +29,6 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    color: #F25244;
-    opacity: 0.5;
     
 }
 
@@ -46,7 +45,17 @@ li {
 
 mark{
     background-color: white;
-    color: #F25244;
+    color: #1e00ff;
+}
+
+a {
+    color: rgb(30, 0, 255, 0.5);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(30, 0, 255);
+    text-decoration: underline;
 }
 
 /* Home */
@@ -60,12 +69,13 @@ mark{
 h1{
     font-family: 'Comfortaa',cursive;
     font-size: 144px;
-    color: #F25244;
+    color: #1e00ff;
     margin-bottom: 50px;
 }
 
 .tagline {
-    color: #F25244;
+    color: #1e00ff;
+    font-size: 30px;
     margin-bottom: 50px;
 }
 
@@ -94,7 +104,7 @@ img{
 }
 
 .social_icons {
-    color: #F25244;
+    color: #1e00ff;
     font-size: 36px;
     margin-top: 50px;
 }
@@ -141,4 +151,53 @@ img{
 
 .work_icon {
     width: 300px;
+}
+
+/* Skills */
+
+#Skills {
+    margin: 30px;
+    padding: 30px;
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.skills_info {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.skills_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.languages {
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    
+}
+
+.cursive {
+    color: black;
+}
+
+.skills_icon {
+    width: 300px;
+}
+
+svg {
+    background-color: white;
+}
+
+rect {
+    color: #1e00ff;
 }
