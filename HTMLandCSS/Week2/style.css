@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    max-width: 100%;
+    box-sizing: border-box;
 }
 
 @media screen and (min-width: 1024px) {
@@ -37,13 +37,18 @@
         gap: 20px;
         
     }
-    #grid-flex>*{
-        flex: 1 1 300px;
-    }
-    :nth-child(1) {
+    #grid-flex :nth-child(1) {
         display: flex;
-        flex-grow: 3;
+        flex-direction: column;
+        flex-grow: 4;
+        width: 500px;
+        
     }
+
+    #grid-flex > *{
+        width: 300px;
+    }
+
 
 
 
