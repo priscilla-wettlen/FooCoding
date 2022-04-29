@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+ul {
+    list-style: none;
+}
+
 @media screen and (min-width: 1024px) {
 
 /* grid layout*/
@@ -53,3 +57,311 @@
    
 }
 
+@media screen and (max-width: 820px) {
+
+    *{
+        max-width: 100%;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    #grid-floats {
+        display: grid;
+        grid-template-columns: 270px 270px 270px;
+        column-gap: 20px;
+    }
+
+    #grid-floats :nth-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        width: 400px;
+        margin-left: 50px;
+    }
+
+    #grid-floats :nth-child(1) img {
+        width: 300px;
+        margin-left: 50px;
+    }
+
+    #grid-floats :nth-child(1) p {
+        width: 300px;
+        margin-left: 50px;
+    }
+
+    #grid-floats :nth-child(2) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        width: 400px;
+        margin-left: 50px;
+    }
+    #grid-floats :nth-child(2) img {
+        width: 300px;
+        margin-left: 50px;
+        
+    }
+    #grid-floats :nth-child(2) p {
+        width: 300px;
+        margin-left: 50px;
+    }
+
+    #grid-floats :nth-child(3){
+        grid-column-start: 1;
+        grid-column-end: 1;
+        width: 150px;
+        margin-left: 10px;
+    }
+    #grid-floats :nth-child(3) img {
+        width: 150px;
+        margin-left: 10px;
+    }
+
+    #grid-floats :nth-child(3) h3 {
+        width: 150px;
+        margin-left: 10px;
+    }
+
+    #grid-floats :nth-child(3) p{
+        width: 150px;
+        margin-left: 10px;
+    }
+
+    #grid-floats :nth-child(4) {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        width: 150px;
+        margin-left: 10px;
+    }
+    #grid-floats :nth-child(4) img {
+        width: 150px;
+        margin-left: 10px;
+    }
+    #grid-floats :nth-child(4) h3 {
+        width: 150px;
+        margin-left: 10px;
+    }
+    #grid-floats :nth-child(4) p{
+        width: 150px;
+        margin-left: 10px;
+    }
+    #grid-floats :nth-child(5) {
+        grid-column-start: 3;
+        grid-column-end: 3;
+        width: 150px;
+        margin-left: 10px;
+    }
+    #grid-floats :nth-child(5) img {
+        width: 150px;
+        margin-left: 10px;
+    }
+    #grid-floats :nth-child(5) h3 {
+        width: 150px;
+        margin-left: 10px;
+    }
+    #grid-floats :nth-child(5) p{
+        width: 150px;
+        margin-left: 10px;
+    }
+    #grid-floats :nth-child(6) {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        width: 150px;
+        margin-left: 10px;
+    }
+    
+    #grid-floats :nth-child(6) img {
+        width: 150px;
+        margin-left: 10px;
+    }
+    
+    #grid-floats :nth-child(6) h3 {
+        width: 150px;
+        margin-left: 10px;
+    }
+    
+    #grid-floats :nth-child(6) p {
+        width: 150px;
+        margin-left: 10px;
+    }
+    
+    #grid-floats :nth-child(7) {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        width: 150px;
+        margin-left: 10px;
+    }
+    
+    #grid-floats :nth-child(7) img {
+        width: 150px;
+        margin-left: 10px;
+    }
+    
+    #grid-floats :nth-child(7) h3 {
+        width: 150px;
+        margin-left: 10px;
+    }
+    
+    #grid-floats :nth-child(7) p {
+        width: 150px;
+        margin-left: 10px;
+    }
+    
+    #grid-floats :nth-child(8) {
+        grid-column-start: 3;
+        grid-column-end: 3;
+        width: 150px;
+        margin-left: 10px;
+    }
+    
+    #grid-floats :nth-child(8) img {
+        width: 150px;
+        margin-left: 10px;
+    }
+    
+    #grid-floats :nth-child(8) h3 {
+        width: 150px;
+        margin-left: 10px;
+    }
+    
+    #grid-floats :nth-child(8) p {
+        width: 150px;
+        margin-left: 10px;
+    }
+    #grid-floats :nth-child(9) {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        width: 150px;
+        margin-left: 10px;
+    }
+    
+    #grid-floats :nth-child(9) img {
+        width: 150px;
+        margin-left: 10px;
+    }
+    
+    #grid-floats :nth-child(9) h3 {
+        width: 150px;
+        margin-left: 10px;
+    }
+    
+    #grid-floats :nth-child(9) p {
+        width: 150px;
+        margin-left: 10px;
+    }
+    
+    #grid-floats :nth-child(10) {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        width: 150px;
+        margin-left: 10px;
+    }
+    
+    #grid-floats :nth-child(10) img {
+        width: 150px;
+        margin-left: 10px;
+    }
+    
+    #grid-floats :nth-child(10) h3 {
+        width: 150px;
+        margin-left: 10px;
+    }
+    
+    #grid-floats :nth-child(10) p {
+        width: 150px;
+        margin-left: 10px;
+    }
+    
+    #grid-floats :nth-child(11) {
+        grid-column-start: 3;
+        grid-column-end: 3;
+        width: 150px;
+        margin-left: 10px;
+    }
+    
+    #grid-floats :nth-child(11) img {
+        width: 150px;
+        margin-left: 10px;
+    }
+    
+    #grid-floats :nth-child(11) h3 {
+        width: 150px;
+        margin-left: 10px;
+    }
+    
+    #grid-floats :nth-child(11) p {
+        width: 150px;
+        margin-left: 10px;
+    }
+#grid-floats :nth-child(12) {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    width: 150px;
+    margin-left: 10px;
+}
+
+#grid-floats :nth-child(12) img {
+    width: 150px;
+    margin-left: 10px;
+}
+
+#grid-floats :nth-child(12) h3 {
+    width: 150px;
+    margin-left: 10px;
+}
+
+#grid-floats :nth-child(12) p {
+    width: 150px;
+    margin-left: 10px;
+}
+
+#grid-floats :nth-child(13) {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    width: 150px;
+    margin-left: 10px;
+}
+
+#grid-floats :nth-child(13) img {
+    width: 150px;
+    margin-left: 10px;
+}
+
+#grid-floats :nth-child(13) h3 {
+    width: 150px;
+    margin-left: 10px;
+}
+
+#grid-floats :nth-child(13) p {
+    width: 150px;
+    margin-left: 10px;
+}
+
+#grid-floats :nth-child(14) {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    width: 150px;
+    margin-left: 10px;
+}
+
+#grid-floats :nth-child(14) img {
+    width: 150px;
+    margin-left: 10px;
+}
+
+#grid-floats :nth-child(14) h3 {
+    width: 150px;
+    margin-left: 10px;
+}
+
+#grid-floats :nth-child(14) p {
+    width: 150px;
+    margin-left: 10px;
+}
+
+
+    
+    /* flex layout */
+    
+
+
+}
