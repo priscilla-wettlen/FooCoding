@@ -347,3 +347,107 @@ h2 {
     }
 
 }
+
+@media screen and (min-width:375px) and (max-width: 412px) {
+    *{
+        max-width: 100%;
+    }
+
+    /* grid layout*/
+
+    #grid-floats {
+        display: grid;
+        grid-template-columns: 175px 175px;
+        column-gap: 15px;
+    }
+
+    #grid-floats :nth-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 400px;
+    }
+    #grid-floats :nth-child(1) img {
+        width: 330px;
+    }
+    #grid-floats :nth-child(1) p {
+        width: 400px;
+    }
+    #grid-floats :nth-child(2) {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        width: 200px;
+    }
+    #grid-floats :nth-child(3) {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        width: 200px;
+        margin-left: 10px;
+    }
+    #grid-floats :nth-child(4) {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        width: 200px;
+        margin-left: 10px;
+    }
+    #grid-floats :nth-child(5) {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        width: 200px;
+        margin-left: 10px;
+    }
+    #grid-floats :nth-child(6) {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        width: 200px;
+        margin-left: 10px;
+    }
+    #grid-floats :nth-child(7) {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        width: 200px;
+        margin-left: 10px;
+    }
+    #grid-floats :nth-child(8) {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        width: 200px;
+        margin-left: 10px;
+    }
+    #grid-floats :nth-child(9) {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        width: 200px;
+        margin-left: 10px;
+    }
+    #grid-floats :nth-child(10) {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        width: 200px;
+        margin-left: 10px;
+    }
+    #grid-floats :nth-child(11) {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        width: 200px;
+        margin-left: 10px;
+    }
+    #grid-floats :nth-child(12) {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        width: 200px;
+        margin-left: 10px;
+    }
+    #grid-floats :nth-child(13) {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        width: 200px;
+        margin-left: 10px;
+    }
+    #grid-floats :nth-child(14) {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        width: 200px;
+        margin-left: 10px;
+    }
+
+}
