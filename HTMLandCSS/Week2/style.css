@@ -154,7 +154,7 @@ img:hover{
    
 }
 
-@media screen and (min-width:768px) and (max-width: 820px) {
+@media screen and (max-width: 820px) {
 
     *{
         max-width: 100%;
@@ -340,6 +340,14 @@ img:hover{
         width: 240px;
     }
 
+}
+
+@media screen and (max-width:768px) {
+    #grid-flex>* {
+        width: 220px;
+        
+    }
+    
 }
 
 @media screen and (max-width: 412px) {
