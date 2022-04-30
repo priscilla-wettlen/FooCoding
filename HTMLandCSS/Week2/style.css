@@ -8,88 +8,101 @@
 ul {
     list-style: none;
 }
-
-
-@media screen and (min-width: 1024px) {
-    *{
-        max-width: 100%;
-        font-family: 'Roboto',
-        sans-serif;
-    }
-    
 h1 {
-    margin: 10px;
     font-family: 'Bebas Neue', cursive;
-    font-size: 4em;
-
 }
 
 h2 {
-    margin: 10px;
-    padding-left: 5px;
     font-family: 'Bebas Neue',
         cursive;
-    font-size: 2em;
 }
 
 h3 {
-    font-size: 22px;
+    font-family: 'Roboto',
+        sans-serif;
 }
 
-/* grid layout*/
-#grid-floats {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 20px;
-    margin: 20px 20px 30px 20px;
+@media screen and (min-width: 1024px) {
+    *{
+    max-width: 100%;
+    font-family: 'Roboto',
+    sans-serif;
+            
+        }
+        
+    h1 {
+        margin: 10px;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 4em;
 
-}
+    }
 
-#grid-floats h3 {
-    margin: 10px 20px 20px 0px;
-}
+    h2 {
+        margin: 10px;
+        padding-left: 5px;
+        font-family: 'Bebas Neue',
+            cursive;
+        font-size: 2em;
+    }
 
-:nth-child(1) {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    margin-bottom: 30px;
-}
+    h3 {
+        font-size: 22px;
+    }
 
-img {
-    width: 200px;
-}
+    /* grid layout*/
+    #grid-floats {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        margin: 20px 20px 30px 20px;
 
-:nth-child(1) > img {
+    }
+
+    #grid-floats h3 {
+        margin: 10px 20px 20px 0px;
+    }
+
+    :nth-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin-bottom: 30px;
+    }
+
+    img {
+        width: 200px;
+    }
+
+    :nth-child(1) > img {
+            width: 500px;
+    }
+    :nth-child(1)>p {
+        margin-top: 10px;
         width: 500px;
-}
-:nth-child(1)>p {
-    margin-top: 10px;
-    width: 500px;
-}
+    }
 
 
-/* flex layout */
+    /* flex layout */
 
-#grid-flex {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    gap: 20px;
-    margin: 20px;
-}
+    #grid-flex {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        gap: 20px;
+        margin: 20px;
+    }
 
-#grid-flex :nth-child(1) {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 4;
-    width: 500px;
+    #grid-flex :nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 4;
+        width: 500px;
 
-}
+    }
 
-#grid-flex>* {
-    width: 330px;
+    #grid-flex>* {
+        width: 330px;
 
-}
+    }
 
 
    
@@ -102,8 +115,21 @@ img {
         margin: 0px;
         padding: 0px;
         box-sizing: border-box;
+        font-family: 'Roboto',
+        sans-serif;
     }
 
+    h1{
+        margin: 10px;
+    }
+
+    h2 {
+        margin: 10px;
+    }
+
+    p {
+        font-size: 14px;
+    }
 
 
     #grid-floats {
@@ -127,12 +153,18 @@ img {
         
     }
 
+    #grid-floats :nth-child(1) h3 {
+        font-size: 22px;
+    }
+
 
     #grid-floats :nth-child(1) p {
         width: 300px;
         margin: 10px 10px 10px 10px;
+        font-size: 18px;
         
     } 
+
 
     #grid-floats :nth-child(2) {
         grid-column-start: 3;
@@ -146,11 +178,14 @@ img {
         margin: 10px 10px 10px 10px;
         
     }
+    #grid-floats :nth-child(2) h3 {
+        font-size: 22px;
+    }
 
     #grid-floats :nth-child(2) p {
         width: 300px;
         margin: 10px 10px 10px 10px;
-       
+        font-size: 18px;
     } 
 
     #grid-floats :nth-child(3){
@@ -158,7 +193,7 @@ img {
         grid-column-end: 1;
         width: 230px;
         margin-left: 10px;
-        
+        margin-bottom: 20px;
         
     }
     #grid-floats :nth-child(3) img {
@@ -170,7 +205,7 @@ img {
         grid-column-start: 2;
         grid-column-end: 2;
         width: 230px;
-        
+        margin-bottom: 20px;
     }
     #grid-floats :nth-child(4) img {
         width: 200px;
@@ -181,7 +216,7 @@ img {
         grid-column-start: 3;
         grid-column-end: 3;
         width: 230px;
-        
+        margin-bottom: 20px;
     }
     #grid-floats :nth-child(5) img {
         width: 200px;
