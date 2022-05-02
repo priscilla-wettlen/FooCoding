@@ -6,23 +6,90 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+/* body{
+    width: 100vw;
+    height: 100vh;
+} */
+
 nav {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
+    padding: 30px;
+    margin: 30px;
 }
 
 nav h1 {
     grid-column-start: 1;
     grid-column-end: 3;
+    font-size: 1.3em;
 }
 
 nav h2 {
     grid-column-start: 3;
     grid-column-end: 6;
+    font-size: 0.9em;
 }
 
-.gallery{
+.info{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    padding: 30px;
+    margin: 30px;
+    margin-bottom: 60px;
 }
+
+.info h2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 0.9em;
+}
+
+.info p{
+    grid-column-start: 3;
+    grid-column-end: 6;
+    font-size: 0.9em;
+}
+
+/* .gallery{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-start: 2;
+    grid-column-end: 6;
+    gap: 20px;
+} */
+
+.gallery {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gallery .gallery_1 article{
+    position: relative;
+}
+
+.gallery .gallery_1  article p{
+    position: absolute;
+}
+
+.gallery .gallery_2 article{
+    position: relative;
+}
+
+.gallery .gallery_2  article p{
+    position: absolute;
+}
+
+.gallery .gallery_3 article{
+    position: relative;
+}
+
+.gallery .gallery_3  article p{
+    position: absolute;
+}
+
+
+
+
+
+
