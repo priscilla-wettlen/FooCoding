@@ -7,16 +7,15 @@
 }
 
 
-/* body{
-    width: 100vw;
-    height: 100vh;
-} */
+body{
+    max-width: 100vw;
+}
 
 nav {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     padding: 30px;
-    margin: 30px;
+    margin: 25px;
 }
 
 nav h1 {
@@ -35,7 +34,7 @@ nav h2 {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     padding: 30px;
-    margin: 30px;
+    margin: 25px;
     margin-bottom: 60px;
 }
 
@@ -61,11 +60,17 @@ nav h2 {
 
 .gallery {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin: 30px;
+    gap: 20px;
 }
+/* .gallery_1, .gallery_2, .gallery_3{
+    gap: 20px;
+} */
 
 .gallery .gallery_1 article{
     position: relative;
+    /* padding: 10px; */
 }
 
 .gallery .gallery_1  article p{
@@ -74,6 +79,7 @@ nav h2 {
 
 .gallery .gallery_2 article{
     position: relative;
+    /* padding: 10px; */
 }
 
 .gallery .gallery_2  article p{
@@ -82,10 +88,36 @@ nav h2 {
 
 .gallery .gallery_3 article{
     position: relative;
+    /* padding: 10px; */
 }
 
 .gallery .gallery_3  article p{
     position: absolute;
+}
+
+.posts, footer{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.posts h3{
+    grid-column: 3 / span 1;
+}
+.list_one, .footer_disclaimer{
+    grid-column: 3 / span 1;
+    list-style: none;
+}
+.list_two, .footer_contact{
+    grid-column: 4 / span 1;
+    list-style: none;
+}
+.list_three, .footer_managed{
+    grid-column: 5 / span 1;
+    list-style: none;
+}
+.list_four, .footer_follow{
+    grid-column: 6 / span 1;
+    list-style: none;
 }
 
 
