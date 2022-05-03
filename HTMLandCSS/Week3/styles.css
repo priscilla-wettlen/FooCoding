@@ -100,9 +100,7 @@ nav h2 {
 .gallery .gallery_3  article p{
     position: absolute;
 } */
-article{
-    position:relative;
-}
+
 
 
 
@@ -115,7 +113,54 @@ article:hover{
     transition-duration: 1s;
 }
 
-article:hover::after{
+article{
+    position: relative;
+}
+
+article p{
+    position: absolute;
+    top:0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(255, 255, 255,.9);
+    opacity: 0;
+    transition: .5s ease;
+}
+
+article:hover p{
+    opacity: 1;
+}
+
+/* .gallery_one{
+    position: relative;
+}
+
+.gallery card{
+    position: absolute;
+    top:0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(255, 255, 255,.9);
+    opacity: 0;
+    transition: .5s ease;
+}
+.gallery_one:hover .gallery_card{
+    opacity: 1;
+}
+.gallery_one p{
+    color: black;
+    position: absolute;
+    top: 10px;
+    left:15px;
+} */
+
+/* article:hover::after{
     background-color: rgb(255, 255, 255,.9);
     content: " ";
     top:0px;
@@ -126,16 +171,25 @@ article:hover::after{
 }
 
 article p {
-    top: 10px;
-    left: 15px;
+    visibility: hidden;
     position: absolute;
-    display: none;
 }
-article p:hover::after{
+
+article:hover::after + p{
+    visibility: visible;
+} */
+/* article p {
+    top: 20px;
+    left: 30px;
+    position: absolute;
+    visibility: hidden;
+}
+article p:hover{
+    position: absolute;
+    visibility: visible;
     top: 10px;
     left: 15px;
-    display: inline;
-}
+} */
 /* article:hover::after{
     background-color: rgb(255, 255, 255,.9);
     content: "The Counter Press Business Cards";
