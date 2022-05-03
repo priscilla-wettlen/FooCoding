@@ -55,14 +55,6 @@ nav h2 {
     font-size: 0.95em;
 }
 
-/* .gallery{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-column-start: 2;
-    grid-column-end: 6;
-    gap: 20px;
-} */
-
 .gallery {
     display: flex;
     justify-content: center;
@@ -70,39 +62,6 @@ nav h2 {
     margin-bottom: 80px;
     gap: 20px;
 }
-/* .gallery_1, .gallery_2, .gallery_3{
-    gap: 20px;
-} */
-
-/* .gallery .gallery_1 article{
-    position: relative;
-    
-}
-
-.gallery .gallery_1  article p{
-    position: absolute;
-}
-
-.gallery .gallery_2 article{
-    position: relative;
-    
-}
-
-.gallery .gallery_2  article p{
-    position: absolute;
-}
-
-.gallery .gallery_3 article{
-    position: relative;
-    
-}
-
-.gallery .gallery_3  article p{
-    position: absolute;
-} */
-
-
-
 
 article{
     filter: grayscale(100%);
@@ -112,6 +71,8 @@ article:hover{
     transition-delay: .05s;
     transition-duration: 1s;
 }
+
+/*Text hover over image*/
 
 article{
     position: relative;
@@ -134,73 +95,6 @@ article:hover p{
     opacity: 1;
 }
 
-/* .gallery_one{
-    position: relative;
-}
-
-.gallery card{
-    position: absolute;
-    top:0;
-    left: 0;
-    right:0;
-    bottom: 0;
-    width: 100%;
-    height: 80px;
-    background-color: rgb(255, 255, 255,.9);
-    opacity: 0;
-    transition: .5s ease;
-}
-.gallery_one:hover .gallery_card{
-    opacity: 1;
-}
-.gallery_one p{
-    color: black;
-    position: absolute;
-    top: 10px;
-    left:15px;
-} */
-
-/* article:hover::after{
-    background-color: rgb(255, 255, 255,.9);
-    content: " ";
-    top:0px;
-    left:0px;
-    position: absolute;
-    width: 100%;
-    height: 80px;
-}
-
-article p {
-    visibility: hidden;
-    position: absolute;
-}
-
-article:hover::after + p{
-    visibility: visible;
-} */
-/* article p {
-    top: 20px;
-    left: 30px;
-    position: absolute;
-    visibility: hidden;
-}
-article p:hover{
-    position: absolute;
-    visibility: visible;
-    top: 10px;
-    left: 15px;
-} */
-/* article:hover::after{
-    background-color: rgb(255, 255, 255,.9);
-    content: "The Counter Press Business Cards";
-    top:0px;
-    left:0px;
-    position: absolute;
-    width: 100%;
-    height: 25%;
-    transition-delay: 0.05s;
-    transition-duration: 1s;
-} */
 
 
 
