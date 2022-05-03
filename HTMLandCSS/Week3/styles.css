@@ -67,6 +67,7 @@ nav h2 {
     display: flex;
     justify-content: center;
     margin: 30px;
+    margin-bottom: 80px;
     gap: 20px;
 }
 /* .gallery_1, .gallery_2, .gallery_3{
@@ -158,7 +159,7 @@ article p:hover::after{
 
 .posts p{
     grid-column: 3 / span 1;
-    margin-left: 20px;
+    margin-left: 40px;
     margin-bottom: 20px;
 }
 .list_one, .footer_disclaimer {
@@ -182,14 +183,14 @@ article p:hover::after{
 
 ul{
     margin-bottom: 150px;
-    margin-left: 20px;
+    margin-left: 40px;
     line-height: 20px;
 }
 
 footer>*{
+    margin-left: 40px;
     margin-bottom: 50px;
     width: 75%;
-    margin-left: 20px;
     color: #666;
 }
 
@@ -202,5 +203,15 @@ footer a:hover{
     text-decoration: underline;
 }
 
-
-
+.footer_disclaimer :nth-child(1){
+    margin-bottom: 20px;
+}
+.footer_contact :nth-child(1){
+    margin-bottom: 20px;
+}
+.footer_managed :nth-child(1){
+    margin-bottom: 20px;
+}
+.footer_follow :nth-child(1){
+    margin-bottom: 20px;
+}
