@@ -63,6 +63,14 @@ nav h2 a:hover{
     grid-column-end: 6;
     font-size: 0.95em;
 }
+.info p a{
+    color: black;
+    text-decoration: none;
+}
+.info p a:hover{
+    color: black;
+    text-decoration: underline;
+}
 
 .gallery {
     display: flex;
