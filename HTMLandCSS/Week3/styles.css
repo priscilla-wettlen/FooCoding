@@ -27,10 +27,20 @@ nav h1 {
     font-size: 1.3em;
 }
 
-nav h2 {
+nav h2{
     grid-column-start: 3;
     grid-column-end: 6;
     font-size: 0.95em;
+}
+
+nav h2 a{
+    color: black;
+    text-decoration: none;
+}
+
+nav h2 a:hover{
+    color: black;
+    text-decoration: underline;
 }
 
 .info{
@@ -104,6 +114,11 @@ article p a{
 article p a:hover{
     color: black;
     text-decoration: underline;
+    cursor: pointer;
+}
+
+img:hover{
+    cursor: pointer;
 }
 
 /* BOTTOM SECTION AND FOOTER */
@@ -143,6 +158,10 @@ ul{
     margin-bottom: 150px;
     margin-left: 40px;
     line-height: 20px;
+}
+ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 footer>*{
