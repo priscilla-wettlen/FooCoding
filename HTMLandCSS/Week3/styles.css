@@ -64,7 +64,7 @@ body{
 
     .info p{
         grid-column-start: 3;
-        grid-column-end: 7;
+        grid-column-end: 6;
         font-size: 0.95em;
     }
     .info p a{
@@ -207,7 +207,7 @@ body{
 }
 
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     nav {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
@@ -396,5 +396,5 @@ body{
     .footer_follow :nth-child(1){
         margin-bottom: 20px;
     }
-    
+
 }
