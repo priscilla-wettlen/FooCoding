@@ -381,14 +381,14 @@ body{
     nav {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        margin: 50px 15px 50px 15px;
+        margin: 50px 15px 0px 15px;
         letter-spacing: -0.5px;
     }
 
     nav h1 {
         grid-column-start: 1;
         grid-column-end: 3;
-        font-size: 1.15em;
+        font-size: 1em;
     }
 
     nav h2{
@@ -399,14 +399,14 @@ body{
     i{
         grid-column-start: 7;
         grid-column-end: 7;
-        font-size: 1.5em;
+        font-size: 1em;
 
     }
 
     .info{
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        margin: 50px 15px 100px 15px;
+        margin: 50px 15px 50px 15px;
         letter-spacing: -0.5px;
     }
 
@@ -414,6 +414,7 @@ body{
         grid-column-start: 1;
         grid-column-end: 3;
         font-size: 0.85em;
+        margin-bottom: 20px;
     }
 
     .info p{
@@ -433,14 +434,21 @@ body{
     .gallery {
         display: flex;
         flex-wrap: wrap;
-        
     }
-    
+
+    .gallery>*{
+        flex: 1 1 50%;
+    }
+
+
+    img{
+        width: 100%;
+    }
     
     article{
         filter: grayscale(100%);
         position: relative;
-        margin: 5px;
+        margin: 10px;
     }
     article:hover{
         filter: none;
@@ -448,9 +456,6 @@ body{
         transition-duration: 1s;
     }
 
-    img{
-        width: 100%;
-    }
 
     article p{
         visibility: hidden;
@@ -458,46 +463,27 @@ body{
     }
 
     /* BOTTOM SECTION AND FOOTER */
-
-    /* .posts, footer{
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-column-start: 3;
+    .posts, footer{
+        display: flex;
+        flex-direction: column;
         font-size: .6em;
+        margin: 50px 10px 50px 10px;
+        
     }
-
-    .posts p{
-        grid-column: 3 / span 1;
-        margin-left: 20px;
-        margin-bottom: 20px;
+    .list_one{
+        line-height: 30px;
     }
-    .list_one, .footer_disclaimer {
-        grid-column: 3 / span 1;
-        list-style: none;
-    }
-    .list_two, .footer_contact  {
-        grid-column: 4 / span 1;
-        list-style: none;
-    }
-    .list_three, .footer_managed {
-        grid-column: 5 / span 1;
-        list-style: none;
-    }
-    .list_four, .footer_follow{
-        grid-column: 6 / span 1;
-        list-style: none;
-    }
-
+    
     ul{
-        margin-bottom: 100px;
-        margin-left: 20px;
-        line-height: 20px;
+        list-style: none;
     }
-
+    .list_two, .list_three, .list_four{
+        visibility: hidden;
+        position: absolute;
+    }
+    
     footer>*{
-        margin-left: 20px;
-        margin-bottom: 50px;
-        width: 75%;
+        width: 90%;
         color: #666;
     }
     footer a{
@@ -508,7 +494,6 @@ body{
         color: #666;
         text-decoration: underline;
     }
-
     .footer_disclaimer :nth-child(1){
         margin-bottom: 20px;
     }
@@ -519,8 +504,7 @@ body{
         margin-bottom: 20px;
     }
     .footer_follow :nth-child(1){
-        margin-bottom: 20px;
-    } */
-
+        margin-bottom: 10px;
+    }
 
 }
