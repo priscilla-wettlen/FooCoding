@@ -94,3 +94,42 @@ if (typeof(age) === typeof(alive) || typeof(birthYear)) {
     console.log('NOT A CHANCE') 
 }
 
+var x = 7;
+var x = x % 3;
+console.log(x);
+
+var y = 500;
+var y = y % 85;
+console.log('85 fits 5 times into 500 and the remainder is ' + y);
+
+var n = 92;
+var n = n % 4;
+console.log('4 fits 23 times into 92 and the remainder is ' + n);
+
+var t = 1005;
+var t = t % 10;
+console.log('10 fits 100 times into 1000 and the remainder is ' + t);
+
+let randomThings = ['shoe', 'pizza', 35, false, 'my mom'];
+console.log(randomThings);
+console.log('Yes, you may store different data types in a single array');
+
+
+let q = 6/0;
+let r = 10/0;
+
+console.log(Number.isFinite(q));
+console.log(Number.isFinite(r));
+
+if (q === r) {
+    console.log('Yes, they are equal')
+} else {
+    console.log("No, they're not equal")
+}
+
+if (q === r) {
+    console.log('Yes, it is possible to compare infinities')
+} else {
+    console.log("No, it's not possible to compare infinities")
+}
+
