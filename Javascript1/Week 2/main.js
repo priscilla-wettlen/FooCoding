@@ -41,3 +41,56 @@ let myAnimals = ["dog", "flamingo", "cockatoo", "cat"]
 console.log(myAnimals);
 myAnimals[4] = "baby pig";
 console.log(myAnimals);
+
+
+let myString = "this is a test";
+console.log(myString);
+console.log(myString.length);
+
+let firstName = "Gloria";
+let lastName = "Trevi";
+let age = 54;
+let birthYear = 1968;
+let birthPlace = "Monterrey";
+let alive = true;
+
+console.log("The value of my variable is " + firstName);
+console.log("The value of my variable is " + lastName);
+console.log("The value of my variable is " + age);
+console.log("The value of my variable is " + birthYear);
+console.log("The value of my variable is " + birthPlace);
+console.log("The value of my variable is " + alive);
+
+console.log("The type of " + firstName + " is string");
+console.log("The type of " + lastName + " is string");
+console.log("The type of " + age + " is number");
+console.log("The type of " + birthYear + " is number");
+console.log("The type of " + birthPlace + " is string");
+console.log("The type of " + alive + " is boolean");
+
+console.log(typeof(firstName));
+console.log(typeof(lastName));
+console.log(typeof(age));
+console.log(typeof(birthYear));
+console.log(typeof(birthPlace));
+console.log(typeof(alive));
+
+if(typeof(firstName) ===  typeof(age)) {
+    console.log('SAME TYPE')
+} else {
+    console.log('NOT A CHANCE')
+}
+
+if (typeof(lastName) === typeof(birthPlace)) {
+    console.log('SAME TYPE');
+    
+} else {
+    console.log('NOT A CHANCE')
+}
+
+if (typeof(age) === typeof(alive) || typeof(birthYear)) {
+    console.log('SAME TYPE') 
+} else {
+    console.log('NOT A CHANCE') 
+}
+
