@@ -33,3 +33,11 @@ let a = Math.round(z);
 console.log(a);
 let b = Math.max(z, a);
 console.log(b);
+
+let dragQueens = []
+console.log('The value of y will be: null');
+console.log(dragQueens);
+let myAnimals = ["dog", "flamingo", "cockatoo", "cat"]
+console.log(myAnimals);
+myAnimals[4] = "baby pig";
+console.log(myAnimals);
