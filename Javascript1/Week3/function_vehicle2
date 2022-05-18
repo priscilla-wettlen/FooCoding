@@ -1,0 +1,19 @@
+/*9. Change the function vehicle to use the list of question 7. So that vehicle("green", 3, 1) prints "a green new bike". */
+
+function vehicle(color, age, vehicle) {
+  if(typeof color !== 'string' && typeof age !== 'number' && typeof vehicle !== 'number')
+    return 'Color must a string; age must be a number; and vehicle must be a number'
+  if(vehicle < 1 || vehicle > 2)
+    return 'Use numbers 1 or 2 to determine the type of vehicle'
+  if(age < 3 || age > 4)
+    return 'Use numbers 4 or 5 to determine the condition of vehicle'
+  if(typeof color === 'string' && age === 3 && vehicle === 1)
+    return `A ${color}, new bike`
+    if(typeof color === 'string' && age === 4 && vehicle === 1)
+    return `A ${color}, used bike`
+  if(typeof color === 'string' && age === 3 && vehicle === 2)
+    return `A ${color}, new motorcycle`
+    if(typeof color === 'string' && age === 4 && vehicle === 2)
+    return `A ${color}, used motorcycle`
+}
+vehicle('green', 3, 1);
