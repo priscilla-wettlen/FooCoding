@@ -19,3 +19,5 @@ function vehicleType(color, vehicle) {
     return `A ${color} motorcycle`
 }
 vehicleType('yellow', 2);
+
+//use arrow function to override

@@ -8,7 +8,10 @@ const juanGabriel = {
   famousSong: "Querida"
 };
 
-function famousMexicanSinger() {
-  console.log(juanGabriel)
+const famousMexicanSinger = (juanGabriel) => {
+  for (const key in juanGabriel) {
+    console.log("key", key);
+    console.log("value", juanGabriel[key]);
+
+  }
 }
-famousMexicanSinger();
