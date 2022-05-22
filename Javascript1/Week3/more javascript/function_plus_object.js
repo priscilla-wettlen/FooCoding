@@ -15,3 +15,4 @@ const famousMexicanSinger = (juanGabriel) => {
 
   }
 }
+famousMexicanSinger(juanGabriel);
