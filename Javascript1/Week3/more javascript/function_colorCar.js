@@ -5,3 +5,4 @@ function colorCar(myColor) {
 }
 
 colorCar("red");
+
