@@ -15,6 +15,7 @@ fetch("https://www.breakingbadapi.com/api/characters")
     
     const button = document.getElementById('random_character');
     const container = document.getElementById('container');
+    const name = document.querySelector('.name');
 
     //Connected the function to the button. Random number/character shows in the console
     button.onclick = function () {
@@ -23,8 +24,8 @@ fetch("https://www.breakingbadapi.com/api/characters")
       //Log the result appended to the 'data' and it gives you a random chatacter info
       console.log(data[getRandomIntInclusive(0, 62)]);
 
-      //Prints the name on the screen, but in a very basic, ugly way. No format, no images.
-      container.append(data[getRandomIntInclusive(0, 62)].name);
+      //Appended to a p element and now it appears in the format name: bla blla
+      name.innerText = `Name: ${(data[getRandomIntInclusive(0, 62)].name)}`;
 
     }
     
