@@ -16,6 +16,7 @@ fetch("https://www.breakingbadapi.com/api/characters")
     const button = document.getElementById('random_character');
     const container = document.getElementById('container');
     const name = document.querySelector('.name');
+    const image = document.createElement('img');
 
     //Connected the function to the button. Random number/character shows in the console
     button.onclick = function () {
@@ -26,6 +27,9 @@ fetch("https://www.breakingbadapi.com/api/characters")
 
       //Appended to a p element and now it appears in the format name: bla blla
       name.innerText = `Name: ${(data[getRandomIntInclusive(0, 62)].name)}`;
+      image.setAttribute("src", (data[getRandomIntInclusive(0, 62)].img));
+      document.querySelector(".image").appendChild(image);
+
 
     }
     
