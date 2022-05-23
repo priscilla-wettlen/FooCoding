@@ -1,1 +1,20 @@
 @use 'variables';
+
+.first_button{
+  display: flex;
+  justify-content: center;
+}
+
+.random_character{
+  background-color: variables.$highlight;
+  color: variables.$bg-color;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 50px;
+  &:hover{
+    background-color: #306644;
+    transition: 0.3s;
+    transition-delay: 0.05s;
+  }
+}
+

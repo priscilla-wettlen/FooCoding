@@ -1,1 +1,60 @@
-@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Plus+Jakarta+Sans:wght@300;400&display=swap");@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Plus+Jakarta+Sans:wght@300;400&display=swap");@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Plus+Jakarta+Sans:wght@300;400&display=swap");header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}h1{font-family:"Crete Round",serif;font-size:48px}.title_highlight{color:#41895C}.tagline{font-family:"Plus Jakarta Sans",sans-serif;font-size:22px}body{background-color:#F0E8C1;margin:20px;color:#3F3F3F}
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Plus+Jakarta+Sans:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Plus+Jakarta+Sans:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Plus+Jakarta+Sans:wght@300;400&display=swap");
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+h1 {
+  font-family: "Crete Round", serif;
+  font-size: 48px;
+}
+
+.title_highlight {
+  color: #41895C;
+}
+
+.tagline {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.first_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.random_character {
+  background-color: #41895C;
+  color: #F0E8C1;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 50px;
+}
+.random_character:hover {
+  background-color: #306644;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transition-delay: 0.05s;
+          transition-delay: 0.05s;
+}
+
+body {
+  background-color: #F0E8C1;
+  margin: 20px;
+  color: #3F3F3F;
+}
