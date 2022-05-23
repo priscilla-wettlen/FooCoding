@@ -1,0 +1,21 @@
+@use 'variables';
+
+header{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1{
+  font-family: variables.$head-font;
+  font-size: 48px;
+}
+
+.title_highlight{
+  color: variables.$highlight;
+}
+
+.tagline{
+  font-family: variables.$body-font;
+  font-size: 22px;
+}

@@ -1,0 +1,10 @@
+@use 'variables';
+
+@import 'header';
+@import 'main';
+
+body{
+  background-color: variables.$bg-color;
+  margin: 20px;
+  color: variables.$body;
+}
