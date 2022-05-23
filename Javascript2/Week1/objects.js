@@ -22,7 +22,7 @@ fetch("https://www.breakingbadapi.com/api/characters")
       
       //console.log(getRandomIntInclusive(0, 62));
       //Log the result appended to the 'data' and it gives you a random chatacter info
-      console.log(data[getRandomIntInclusive(0, 62)]);
+      //console.log(data[getRandomIntInclusive(0, 62)]);
 
       //Appended to a p element and now it appears in the format name: bla blla
       name.innerText = `Name: ${(data[getRandomIntInclusive(0, 62)].name)}`;
