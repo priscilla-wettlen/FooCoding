@@ -8,8 +8,9 @@
 #random_character{
   background-color: variables.$highlight;
   color: variables.$bg-color;
-  font-size: 20px;
-  padding: 20px;
+  font-size: 16px;
+  padding: 18px;
+  border: 0px;
   border-radius: 50px;
   &:hover{
     background-color: #306644;
@@ -18,18 +19,36 @@
   }
 }
 
-#container{
-  //background-color: variables.$accent;
+.second{
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
-.name{
+#container{
+  max-width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+
+.container_2{
+  width: 300px;
+  height: 300px;
+}
+
+.name, .nickname, .occupation, .portrayed, .status{
   font-family: variables.$body-font;
-  font-size: 20px;
+  font-size: 16px;
+  font-family: variables.$head-font;
+}
+
+img{
+  width: 300px;
+  height: auto;
+  border: 5px solid #F0E8C1;
 }

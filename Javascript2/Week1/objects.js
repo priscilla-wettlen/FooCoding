@@ -58,12 +58,20 @@ fetch("https://www.breakingbadapi.com/api/characters")
     const button = document.getElementById('random_character');
     const container = document.getElementById('container');
     const name = document.querySelector('.name');
+    const nickname = document.querySelector('.nickname');
+    const occupation = document.querySelector('.occupation');
+    const portrayed = document.querySelector('.portrayed');
+    const status = document.querySelector('.status');
     const image = document.createElement('img');
 
     button.onclick = function () {
       const randomChar = data[getRandomIntInclusive(0, 62)].char_id;
-      container.style.backgroundColor = '#D8C453';
+      container.style.backgroundColor = "#D8C453";
       name.innerText = `Name: ${(data[randomChar].name)}`;
+      nickname.innerText = `Nickname: ${(data[randomChar].nickname)}`;
+      occupation.innerText = `Occupation: ${(data[randomChar].occupation)}`;
+      status.innerText = `Status: ${(data[randomChar].status)}`;
+      portrayed.innerText = `Portrayed: ${(data[randomChar].portrayed)}`;
       console.log(randomChar);
       image.setAttribute("src", (data[randomChar].img));
       document.querySelector(".image").appendChild(image);

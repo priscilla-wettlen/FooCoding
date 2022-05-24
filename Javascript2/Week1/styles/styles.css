@@ -41,8 +41,9 @@ h1 {
 #random_character {
   background-color: #41895C;
   color: #F0E8C1;
-  font-size: 20px;
-  padding: 20px;
+  font-size: 16px;
+  padding: 18px;
+  border: 0px;
   border-radius: 50px;
 }
 #random_character:hover {
@@ -53,7 +54,7 @@ h1 {
           transition-delay: 0.05s;
 }
 
-#container {
+.second {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,16 +65,41 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: hidden;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
-.name {
+#container {
+  max-width: 300px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+
+.container_2 {
+  width: 300px;
+  height: 300px;
+}
+
+.name, .nickname, .occupation, .portrayed, .status {
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
+  font-family: "Crete Round", serif;
+}
+
+img {
+  width: 300px;
+  height: auto;
+  border: 5px solid #F0E8C1;
 }
 
 body {
