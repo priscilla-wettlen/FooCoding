@@ -18,6 +18,14 @@
     transition-delay: 0.05s;
   }
 }
+.hide{
+  background-color: variables.$highlight;
+  color: variables.$bg-color;
+  font-size: 16px;
+  padding: 18px;
+  border: 0px;
+  border-radius: 50px;
+}
 
 .second{
   display: flex;

@@ -63,10 +63,19 @@ fetch("https://www.breakingbadapi.com/api/characters")
     const portrayed = document.querySelector('.portrayed');
     const status = document.querySelector('.status');
     const image = document.createElement('img');
+    const btn = document.createElement("input")
+    btn.setAttribute("class", ".hide")
+    btn.setAttribute("type", "button")
+    btn.setAttribute("value", "Hide")
+    btn.style.backgroundColor = "#41895C"
+    btn.style.color = "#F0E8C1"
+    
 
-    button.onclick = function () {
+    button.onclick = function() {
+      
       const randomChar = data[getRandomIntInclusive(0, 62)].char_id;
       container.style.backgroundColor = "#D8C453";
+      container.style.display = "block"
       name.innerText = `Name: ${(data[randomChar].name)}`;
       nickname.innerText = `Nickname: ${(data[randomChar].nickname)}`;
       occupation.innerText = `Occupation: ${(data[randomChar].occupation)}`;
@@ -75,8 +84,31 @@ fetch("https://www.breakingbadapi.com/api/characters")
       console.log(randomChar);
       image.setAttribute("src", (data[randomChar].img));
       document.querySelector(".image").appendChild(image);
+      container.appendChild(btn);
+      
 
-     }
+    }
+
+    btn.addEventListener('click', function handleHide() {
+      if (container.style.display === "none") {
+        container.style.display = "block";
+      } else {
+        container.style.display = "none"
+      }
+    });
+      
+      
+    
+    
+    
+      
+    
+      
+    
+
+    
+      
+    
     
     
 
