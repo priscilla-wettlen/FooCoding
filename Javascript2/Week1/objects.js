@@ -38,8 +38,8 @@ fetch("https://www.breakingbadapi.com/api/characters")
 
     function getRandomIntInclusive(min, max) {
         min = Math.ceil(min);
-     max = Math.floor(max);
-       return Math.floor(Math.random() * (max - min + 1) + min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1) + min);
   
       }
     
@@ -62,6 +62,7 @@ fetch("https://www.breakingbadapi.com/api/characters")
 
     button.onclick = function () {
       const randomChar = data[getRandomIntInclusive(0, 62)].char_id;
+      container.style.backgroundColor = '#D8C453';
       name.innerText = `Name: ${(data[randomChar].name)}`;
       console.log(randomChar);
       image.setAttribute("src", (data[randomChar].img));

@@ -25,7 +25,7 @@ h1 {
 
 .tagline {
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 22px;
+  font-size: 16px;
   margin-bottom: 30px;
 }
 
@@ -51,6 +51,29 @@ h1 {
   transition: 0.3s;
   -webkit-transition-delay: 0.05s;
           transition-delay: 0.05s;
+}
+
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.name {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 20px;
 }
 
 body {
