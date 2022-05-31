@@ -4,7 +4,7 @@
   const bookSection = document.createElement("div", ".book_section");
   const ul = document.createElement("ul");
   bookSection.appendChild(ul);
-  console.log(bookSection)
+  //console.log(bookSection)
   
   const bookTitles = [
     "batallas_desierto",
@@ -12,7 +12,7 @@
     "hunger_games",
     "senoras_narco",
     "pride_prejudice",
-    "1984",
+    "nineteen_eightyfour",
     "huracanes",
     "utvandrarna",
     "gloria_infierno",
@@ -41,7 +41,11 @@
   }
   bookList();
 
-  myBooks = {
+/* 1.4 Make an object (not an array!) containing information for each book. Each property of this object should be another 
+(i.e., nested) object with the book ID you thought up in step 1.1 as a key, and at least the following properties: title,
+language and author. */
+
+  let myBooks = {
     batallas_desierto: {
       title: '"Las Batallas en el Desierto" / "Battles in the Desert"',
       author: "José Emilio Pacheco",
@@ -72,7 +76,7 @@
       year: "1813",
       language: "English"
     },
-    1984: {
+    nineteen_eightyfour: {
       title: '"1984"',
       author: "George Orwell",
       year: "1949",
@@ -85,7 +89,7 @@
       language: "Spanish"
     },
     utvandrarna: {
-      title: '"Utvandrarna" / "The emigrants"',
+      title: '"Utvandrarna" / "The Emigrants"',
       author: "Vilhelm Moberg",
       year: "1949",
       language: "Swedish"
@@ -97,7 +101,7 @@
       language: "Spanish"
     },
     wuthering_heights: {
-      title: "Wuthering Heights",
+      title: '"Wuthering Heights"',
       author: "Emily Brontë",
       year: "1847",
       language: "English"
@@ -105,5 +109,38 @@
 
   }
 
+  
+
+/* 
+1.5 Now change the function from step 1.3 that you used to display the book ID's in a list 
+to take the actual information about the book from the object and display that. Make sure you 
+choose the correct HTML elements for each piece of info, for instance, a heading for the title.
+*/
+  
+  
+  function displayBooks() {
+  
+    
+    
+
+    for (let key in myBooks) {
+      console.log("key", key);
+      console.log("value", myBooks[key]);
+
+      const body = document.querySelector("body")
+      const h1 = document.createElement("h1");
+      h1.innerHTML = h1.innerHTML += myBooks[key].title;
+      body.appendChild(h1)
+      
+    }
+
+    
+
+  }
+ 
+  displayBooks();
 
 };
+
+
+  
