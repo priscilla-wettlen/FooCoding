@@ -51,61 +51,71 @@ language and author. */
       title: '"Las Batallas en el Desierto" / "Battles in the Desert"',
       author: "José Emilio Pacheco",
       year: "1981",
-      language: "Spanish"
+      language: "Spanish",
+      img: "img/batallas.jpeg"
     },
     potter: {
       title: '"Harry Potter and The Half-Blood Prince"',
       author: "She Who Must Not Be Named",
       year: "2006",
-      language: "English"
+      language: "English",
+      img: "img/halfblood.jpeg"
     },
     hunger: {
       title: '"The Hunger Games"',
       author: "Suzanne Collins",
       year: "2008",
-      language: "English"
+      language: "English",
+      img: "img/hunger.jpg"
     },
     senoras: {
       title: '"Emma y Las Otras Señoras del Narco" / "Emma and The Other Ladies of the Narco"',
       author: "Anabel Hernández",
       year: "2021",
-      language: "Spanish"
+      language: "Spanish",
+      img: "img/emma_narco.jpeg"
     },
     pride: {
       title: '"Pride and Prejudice"',
       author: "Jane Austen",
       year: "1813",
-      language: "English"
+      language: "English",
+      img: "img/pride.jpeg"
     },
     eightyfour: {
       title: '"1984"',
       author: "George Orwell",
       year: "1949",
-      language: "English"
+      language: "English",
+      img: "img/1984.jpg"
     },
     huracanes: {
       title: '"Temporada de Huracanes" / "Hurricane Season"',
       author: "Fernanda Melchor",
       year: "2017",
-      language: "Spanish"
+      language: "Spanish",
+      img: "img/huracanes.jpeg"
     },
     utvandrarna: {
       title: '"Utvandrarna" / "The Emigrants"',
       author: "Vilhelm Moberg",
       year: "1949",
-      language: "Swedish"
+      language: "Swedish",
+      img: "img/utvandrarna.jpeg"
     },
     gloria: {
       title: '"La Gloria por el Infierno" / "The Glory for the Hell"',
       author: "Alinee Hernández",
       year: "1998",
-      language: "Spanish"
+      language: "Spanish",
+      img: "img/gloria.jpeg"
     },
     heights: {
       title: '"Wuthering Heights"',
       author: "Emily Brontë",
       year: "1847",
-      language: "English"
+      language: "English",
+      img: "img/heights.jpeg"
     }
 
   }
@@ -122,50 +132,70 @@ choose the correct HTML elements for each piece of info, for instance, a heading
   function displayBooks() {
 
     for (let key in myBooks) {
+        const main = document.querySelector("main");
+        const cover = document.createElement("img")
+        cover.setAttribute("src", myBooks[key].img)
+        cover.setAttribute("alt", "book cover")
+        main.appendChild(cover)
+
+        const bookSection = document.createElement("div");
+        bookSection.setAttribute("class", "book_section");
+        const oneBook = document.createElement("div");
+        oneBook.setAttribute("class", "book");
+      
+        const h1 = document.createElement("h1");
+        const h2 = document.createElement("h2");
+        const year = document.createElement("p", ".year")
+        const lang = document.createElement("p", ".lang")
+        h1.innerHTML = h1.innerHTML += myBooks[key].title;
+        h2.innerHTML = h2.innerHTML += myBooks[key].author;
+        year.innerHTML = year.innerHTML += myBooks[key].year;
+        lang.innerHTML = lang.innerHTML += myBooks[key].language;
+        main.appendChild(bookSection);
+      bookSection.appendChild(oneBook)
+      //cover.appendChild(oneBook)
+        oneBook.appendChild(h1);
+        oneBook.appendChild(h2);
+        oneBook.appendChild(year);
+        oneBook.appendChild(lang);
       
 
-      const main = document.querySelector("main");
-      const bookSection = document.createElement("div");
-      bookSection.setAttribute("class", "book_section");
-      const oneBook = document.createElement("div");
-      oneBook.setAttribute("class", "book");
-      const h1 = document.createElement("h1");
-      const h2 = document.createElement("h2");
-      const year = document.createElement("p", ".year")
-      const lang = document.createElement("p", ".lang")
-      h1.innerHTML = h1.innerHTML += myBooks[key].title;
-      h2.innerHTML = h2.innerHTML += myBooks[key].author;
-      year.innerHTML = year.innerHTML += myBooks[key].year;
-      lang.innerHTML = lang.innerHTML += myBooks[key].language;
-      main.appendChild(bookSection);
-      bookSection.appendChild(oneBook)
-      oneBook.appendChild(h1);
-      oneBook.appendChild(h2);
-      oneBook.appendChild(year);
-      oneBook.appendChild(lang);
+      const mouseOver = () => {
+        cover.style.display = "none";
+        oneBook.style.display = "block";
+        
+      }
+      const mouseOut = () => {
+        cover.style.display = "block";
+        oneBook.style.display = "hidden";
+      }
+
+      cover.addEventListener("mouseover", mouseOver)
+      cover.addEventListener("mouseout", mouseOut)
+
 
     }
 
   }
  
-  //displayBooks();
+  displayBooks();
 
   /* 1.7 Find and download book covers for each book and construct a new object which has as 
 keys the book IDs again, and as value the path to the image source 
 (e.g. { harry_potter_blabla: './img/harry_potter_blabla.jpg', ... }). */
 
-  let bookCovers = {
-    batallas: "img/batallas.jpeg",
-    potter: "img/halfblood.jpeg",
-    hunger: "img/hunger.jpg",
-    senoras: "img/emma_narco.jpeg",
-    pride: "img/pride.jpeg",
-    eightyfour: "img/1984.jpg",
-    huracanes: "img/huracanes.jpeg",
-    utvandrarna: "img/utvandrarna.jpeg",
-    gloria: "img/gloria.jpeg",
-    heights: "img/heights.jpeg"
-  }
+  // let bookCovers = {
+  //   batallas: "img/batallas.jpeg",
+  //   potter: "img/halfblood.jpeg",
+  //   hunger: "img/hunger.jpg",
+  //   senoras: "img/emma_narco.jpeg",
+  //   pride: "img/pride.jpeg",
+  //   eightyfour: "img/1984.jpg",
+  //   huracanes: "img/huracanes.jpeg",
+  //   utvandrarna: "img/utvandrarna.jpeg",
+  //   gloria: "img/gloria.jpeg",
+  //   heights: "img/heights.jpeg"
+  // }
 
   /* 1.8 Loop over these entries (hint: Object.keys(objectName) gives you an array containing 
   the keys). Then write a function which places an image at the corresponding li element. 
@@ -173,24 +203,47 @@ keys the book IDs again, and as value the path to the image source
   first li element. (Hint: you could give each li item an id tag by modifying the function you 
   made before.)*/
 
-  function displayCovers() {
-    for (let key in bookCovers) {
-      const main = document.querySelector("main");
-      const cover = document.createElement("img")
-      cover.setAttribute("src", bookCovers[key])
-      cover.setAttribute("alt", "book cover")
-      main.appendChild(cover)
+  // function displayCovers() {
+  //   for (let key in bookCovers) {
+  //     const main = document.querySelector("main");
+  //     const cover = document.createElement("img")
+  //     cover.setAttribute("src", bookCovers[key])
+  //     cover.setAttribute("alt", "book cover")
+  //     main.appendChild(cover)
 
-      const mouseEnter = () => console.log("yes");
-      const mouseLeave = () => console.log("no");
+  //     const mouseEnter = () => {
+  //     const main = document.querySelector("main");
+  //     const bookSection = document.createElement("div");
+  //     bookSection.setAttribute("class", "book_section");
+  //     const oneBook = document.createElement("div");
+  //     oneBook.setAttribute("class", "book");
+  //     const h1 = document.createElement("h1");
+  //     const h2 = document.createElement("h2");
+  //     const year = document.createElement("p", ".year")
+  //     const lang = document.createElement("p", ".lang")
+  //     h1.innerHTML = h1.innerHTML += myBooks[key].title;
+  //     h2.innerHTML = h2.innerHTML += myBooks[key].author;
+  //     year.innerHTML = year.innerHTML += myBooks[key].year;
+  //     lang.innerHTML = lang.innerHTML += myBooks[key].language;
+  //     main.appendChild(bookSection);
+  //     //bookSection.appendChild(cover)
+  //     cover.appendChild(oneBook)
+  //     oneBook.appendChild(h1);
+  //     oneBook.appendChild(h2);
+  //     oneBook.appendChild(year);
+  //     oneBook.appendChild(lang);
+      
+       
+  //     }
+  //     const mouseLeave = () => " "
 
-      cover.addEventListener("mouseenter", mouseEnter)
-      cover.addEventListener("mouseleave", mouseLeave)
-    }
+  //     cover.addEventListener("mouseenter", mouseEnter)
+  //     cover.addEventListener("mouseleave", mouseLeave)
+  //   }
 
     
-  }
-  displayCovers();
+  // }
+  // displayCovers();
 
         
     
