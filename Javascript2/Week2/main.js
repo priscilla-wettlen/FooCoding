@@ -1,7 +1,8 @@
 'use strict';
 {
 
-  const bookSection = document.createElement("div", ".book_section");
+  const bookSection = document.createElement("div");
+  bookSection.setAttribute("id", "#book_section")
   const ul = document.createElement("ul");
   bookSection.appendChild(ul);
   //console.log(bookSection)
@@ -26,20 +27,20 @@
   /* Make a function (or functions) that generate a ul with li elements for each book ID in the array using a for loop. 
   Make sure that the function names you choose are an accurate reflection of what they do. */
 
-  function bookList() {
+  // function bookList() {
 
     
-    for (let i = 0; i < bookTitles.length; i++){
+  //   for (let i = 0; i < bookTitles.length; i++){
 
-    let li = document.createElement("li");
-      ul.appendChild(li)
-      li.innerHTML = li.innerHTML += bookTitles[i]
+  //   let li = document.createElement("li");
+  //     ul.appendChild(li)
+  //     li.innerHTML = li.innerHTML += bookTitles[i]
     
 
-  }
+  // }
  
-  }
-  bookList();
+  // }
+  // bookList();
 
 /* 1.4 Make an object (not an array!) containing information for each book. Each property of this object should be another 
 (i.e., nested) object with the book ID you thought up in step 1.1 as a key, and at least the following properties: title,
@@ -119,22 +120,31 @@ choose the correct HTML elements for each piece of info, for instance, a heading
   
   
   function displayBooks() {
-  
-    
-    
 
     for (let key in myBooks) {
-      console.log("key", key);
-      console.log("value", myBooks[key]);
-
-      const body = document.querySelector("body")
-      const h1 = document.createElement("h1");
-      h1.innerHTML = h1.innerHTML += myBooks[key].title;
-      body.appendChild(h1)
       
-    }
 
-    
+      const main = document.querySelector("main");
+      const bookSection = document.createElement("div");
+      bookSection.setAttribute("class", "book_section");
+      const oneBook = document.createElement("div");
+      oneBook.setAttribute("class", "book");
+      const h1 = document.createElement("h1");
+      const h2 = document.createElement("h2");
+      const year = document.createElement("p", ".year")
+      const lang = document.createElement("p", ".lang")
+      h1.innerHTML = h1.innerHTML += myBooks[key].title;
+      h2.innerHTML = h2.innerHTML += myBooks[key].author;
+      year.innerHTML = year.innerHTML += myBooks[key].year;
+      lang.innerHTML = lang.innerHTML += myBooks[key].language;
+      main.appendChild(bookSection);
+      bookSection.appendChild(oneBook)
+      oneBook.appendChild(h1);
+      oneBook.appendChild(h2);
+      oneBook.appendChild(year);
+      oneBook.appendChild(lang);
+
+    }
 
   }
  
