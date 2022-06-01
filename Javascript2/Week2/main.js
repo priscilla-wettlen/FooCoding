@@ -8,16 +8,16 @@
   //console.log(bookSection)
   
   const bookTitles = [
-    "batallas_desierto",
-    "harry_potter",
-    "hunger_games",
-    "senoras_narco",
-    "pride_prejudice",
-    "nineteen_eightyfour",
+    "batallas",
+    "potter",
+    "hunger",
+    "senoras",
+    "pride",
+    "eightyfour",
     "huracanes",
     "utvandrarna",
-    "gloria_infierno",
-    "wuthering_heights"
+    "gloria",
+    "heights"
 
   ];
 
@@ -47,37 +47,37 @@
 language and author. */
 
   let myBooks = {
-    batallas_desierto: {
+    batallas: {
       title: '"Las Batallas en el Desierto" / "Battles in the Desert"',
       author: "José Emilio Pacheco",
       year: "1981",
       language: "Spanish"
     },
-    harry_potter: {
+    potter: {
       title: '"The Harry Potter Series"',
       author: "She Who Must Not Be Named",
       year: "1997 - 2007",
       language: "English"
     },
-    hunger_games: {
+    hunger: {
       title: '"The Hunger Games"',
       author: "Suzanne Collins",
       year: "2008",
       language: "English"
     },
-    senoras_narco: {
+    senoras: {
       title: '"Emma y Las Otras Señoras del Narco" / "Emma and The Other Ladies of the Narco"',
       author: "Anabel Hernández",
       year: "2021",
       language: "Spanish"
     },
-    pride_prejudice: {
+    pride: {
       title: '"Pride and Prejudice"',
       author: "Jane Austen",
       year: "1813",
       language: "English"
     },
-    nineteen_eightyfour: {
+    eightyfour: {
       title: '"1984"',
       author: "George Orwell",
       year: "1949",
@@ -95,13 +95,13 @@ language and author. */
       year: "1949",
       language: "Swedish"
     },
-    gloria_infierno: {
+    gloria: {
       title: '"La Gloria por el Infierno" / "The Glory for the Hell"',
       author: "Alinee Hernández",
       year: "1998",
       language: "Spanish"
     },
-    wuthering_heights: {
+    heights: {
       title: '"Wuthering Heights"',
       author: "Emily Brontë",
       year: "1847",
@@ -151,6 +151,23 @@ choose the correct HTML elements for each piece of info, for instance, a heading
   displayBooks();
 
 };
+
+/* 1.7 Find and download book covers for each book and construct a new object which has as 
+keys the book IDs again, and as value the path to the image source 
+(e.g. { harry_potter_blabla: './img/harry_potter_blabla.jpg', ... }). */
+
+let bookCovers = {
+  batallas: "img/batallas.jpeg",
+  potter: "img/halfblood.jpeg",
+  hunger: "img/hunger.jpg",
+  senoras: "img/emma_narco.jpeg",
+  pride: "img/pride.jpeg",
+  eightyfour: "img/1984.jpg",
+  huracanes: "img/huracanes.jpeg",
+  utvandrarna: "img/utvandrarna.jpeg",
+  gloria: "img/gloria.jpeg",
+  heights: "img/heights.jpeg"
+}
 
 
   
