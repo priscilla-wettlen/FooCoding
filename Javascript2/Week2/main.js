@@ -54,9 +54,9 @@ language and author. */
       language: "Spanish"
     },
     potter: {
-      title: '"The Harry Potter Series"',
+      title: '"Harry Potter and The Half-Blood Prince"',
       author: "She Who Must Not Be Named",
-      year: "1997 - 2007",
+      year: "2006",
       language: "English"
     },
     hunger: {
