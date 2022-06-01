@@ -148,26 +148,44 @@ choose the correct HTML elements for each piece of info, for instance, a heading
 
   }
  
-  displayBooks();
+  //displayBooks();
 
-};
-
-/* 1.7 Find and download book covers for each book and construct a new object which has as 
+  /* 1.7 Find and download book covers for each book and construct a new object which has as 
 keys the book IDs again, and as value the path to the image source 
 (e.g. { harry_potter_blabla: './img/harry_potter_blabla.jpg', ... }). */
 
-let bookCovers = {
-  batallas: "img/batallas.jpeg",
-  potter: "img/halfblood.jpeg",
-  hunger: "img/hunger.jpg",
-  senoras: "img/emma_narco.jpeg",
-  pride: "img/pride.jpeg",
-  eightyfour: "img/1984.jpg",
-  huracanes: "img/huracanes.jpeg",
-  utvandrarna: "img/utvandrarna.jpeg",
-  gloria: "img/gloria.jpeg",
-  heights: "img/heights.jpeg"
-}
+  let bookCovers = {
+    batallas: "img/batallas.jpeg",
+    potter: "img/halfblood.jpeg",
+    hunger: "img/hunger.jpg",
+    senoras: "img/emma_narco.jpeg",
+    pride: "img/pride.jpeg",
+    eightyfour: "img/1984.jpg",
+    huracanes: "img/huracanes.jpeg",
+    utvandrarna: "img/utvandrarna.jpeg",
+    gloria: "img/gloria.jpeg",
+    heights: "img/heights.jpeg"
+  }
+
+  /* 1.8 Loop over these entries (hint: Object.keys(objectName) gives you an array containing 
+  the keys). Then write a function which places an image at the corresponding li element. 
+  Remember that objects are not ordered, so you cannot guarantee that the first key is the 
+  first li element. (Hint: you could give each li item an id tag by modifying the function you 
+  made before.)*/
+
+  function displayCovers() {
+    for (let key in bookCovers) {
+      const main = document.querySelector("main");
+      const cover = document.createElement("img")
+      cover.setAttribute("src", bookCovers[key])
+      cover.setAttribute("alt", "book cover")
+      main.appendChild(cover)
+    }
+  }
+  displayCovers();
+};
+
+
 
 
   

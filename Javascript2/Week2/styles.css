@@ -29,3 +29,9 @@ main{
   width: 300px;
   
 }
+
+img{
+  width: 300px;
+  height: auto;
+  margin: 20px;
+}
