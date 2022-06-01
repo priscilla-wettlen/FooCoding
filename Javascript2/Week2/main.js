@@ -157,7 +157,9 @@ choose the correct HTML elements for each piece of info, for instance, a heading
         oneBook.appendChild(h1);
         oneBook.appendChild(h2);
         oneBook.appendChild(year);
-        oneBook.appendChild(lang);
+      oneBook.appendChild(lang);
+      
+      //When mouseover, the text appears instead of img, but text is still visible without hovering
       
 
       const mouseOver = () => {
