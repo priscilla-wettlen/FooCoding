@@ -35,3 +35,8 @@ img{
   height: auto;
   margin: 20px;
 }
+
+img:hover{
+  opacity: 0.3;
+  color: rgb(0, 0, 0);
+}

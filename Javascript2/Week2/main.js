@@ -180,9 +180,22 @@ keys the book IDs again, and as value the path to the image source
       cover.setAttribute("src", bookCovers[key])
       cover.setAttribute("alt", "book cover")
       main.appendChild(cover)
+
+      const mouseEnter = () => console.log("yes");
+      const mouseLeave = () => console.log("no");
+
+      cover.addEventListener("mouseenter", mouseEnter)
+      cover.addEventListener("mouseleave", mouseLeave)
     }
+
+    
   }
   displayCovers();
+
+        
+    
+
+  
 };
 
 
