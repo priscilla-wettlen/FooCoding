@@ -155,7 +155,7 @@ language and author. */
       info.setAttribute("href", myBooks[key].info)
       info.setAttribute("alt", "Click to view more information about this book")
       info.setAttribute("target", "_blank")
-      info.style.cursor = "pointer";
+      
         h1.innerHTML = h1.innerHTML += myBooks[key].title;
         h2.innerHTML = h2.innerHTML += myBooks[key].author;
         year.innerHTML = year.innerHTML += myBooks[key].year;
@@ -187,6 +187,7 @@ language and author. */
         cover.style.opacity = "0.2"
         oneBook.style.display = "block"
         oneBook.style.position = "relative"
+
         
         
       }
@@ -200,8 +201,8 @@ language and author. */
       }
 
       
-      cover.addEventListener("mouseover", mouseOver)
-      cover.addEventListener("mouseout", mouseOut)
+      cover.addEventListener("mouseenter", mouseOver)
+      cover.addEventListener("mouseleave", mouseOut)
 
 
     }
