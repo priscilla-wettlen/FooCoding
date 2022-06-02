@@ -52,6 +52,7 @@ language and author. */
       author: "José Emilio Pacheco",
       year: "1981",
       language: "Spanish",
+      info: "https://en.wikipedia.org/wiki/Battles_in_the_Desert",
       img: "img/batallas.jpeg"
     },
     potter: {
@@ -59,6 +60,7 @@ language and author. */
       author: "She Who Must Not Be Named",
       year: "2006",
       language: "English",
+      info: "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Half-Blood_Prince",
       img: "img/halfblood.jpeg"
     },
     hunger: {
@@ -66,6 +68,7 @@ language and author. */
       author: "Suzanne Collins",
       year: "2008",
       language: "English",
+      info: "https://en.wikipedia.org/wiki/The_Hunger_Games_(novel)",
       img: "img/hunger.jpg"
     },
     senoras: {
@@ -73,6 +76,7 @@ language and author. */
       author: "Anabel Hernández",
       year: "2021",
       language: "Spanish",
+      info: "https://marketresearchtelecast.com/emma-and-the-other-narco-ladies-the-book-that-unleashes-a-scandal-in-mexico-by-linking-famous-celebrities-with-the-drug-lords/222267/",
       img: "img/emma_narco.jpeg"
     },
     pride: {
@@ -80,6 +84,7 @@ language and author. */
       author: "Jane Austen",
       year: "1813",
       language: "English",
+      info: "https://en.wikipedia.org/wiki/Pride_and_Prejudice",
       img: "img/pride.jpeg"
     },
     eightyfour: {
@@ -87,6 +92,7 @@ language and author. */
       author: "George Orwell",
       year: "1949",
       language: "English",
+      info: "https://en.wikipedia.org/wiki/Nineteen_Eighty-Four",
       img: "img/1984.jpg"
     },
     huracanes: {
@@ -94,6 +100,7 @@ language and author. */
       author: "Fernanda Melchor",
       year: "2017",
       language: "Spanish",
+      info: "https://en.wikipedia.org/wiki/Hurricane_Season_(novel)",
       img: "img/huracanes.jpeg"
     },
     utvandrarna: {
@@ -101,6 +108,7 @@ language and author. */
       author: "Vilhelm Moberg",
       year: "1949",
       language: "Swedish",
+      info: "https://en.wikipedia.org/wiki/The_Emigrants_(Moberg_novel)",
       img: "img/utvandrarna.jpeg"
     },
     gloria: {
@@ -108,6 +116,7 @@ language and author. */
       author: "Alinee Hernández",
       year: "1998",
       language: "Spanish",
+      info: "Not found",
       img: "img/gloria.jpeg"
     },
     heights: {
@@ -115,6 +124,7 @@ language and author. */
       author: "Emily Brontë",
       year: "1847",
       language: "English",
+      info: "https://en.wikipedia.org/wiki/Wuthering_Heights",
       img: "img/heights.jpeg"
     }
 
@@ -147,10 +157,15 @@ choose the correct HTML elements for each piece of info, for instance, a heading
         const h2 = document.createElement("h2");
         const year = document.createElement("p", ".year")
         const lang = document.createElement("p", ".lang")
+      const info = document.createElement("a")
+      info.setAttribute("href", myBooks[key].info)
+      info.setAttribute("alt", "Click to view more information about this book")
+      info.style.cursor = "pointer";
         h1.innerHTML = h1.innerHTML += myBooks[key].title;
         h2.innerHTML = h2.innerHTML += myBooks[key].author;
         year.innerHTML = year.innerHTML += myBooks[key].year;
         lang.innerHTML = lang.innerHTML += myBooks[key].language;
+        info.innerText = info.innerText += "More info";
         main.appendChild(bookSection);
         bookSection.appendChild(cover)
         bookSection.appendChild(oneBook)
@@ -159,6 +174,8 @@ choose the correct HTML elements for each piece of info, for instance, a heading
         oneBook.appendChild(h2);
         oneBook.appendChild(year);
         oneBook.appendChild(lang);
+        oneBook.appendChild(info);
+      
       
       //When mouseover, the text appears instead of img, but text is still visible without hovering
       
@@ -171,13 +188,21 @@ choose the correct HTML elements for each piece of info, for instance, a heading
       cover.addEventListener("load", onLoad);
 
       const mouseOver = () => {
-        cover.style.display = "none";
+        //cover.style.display = "none";
+        cover.style.position = "absolute"
+        cover.style.opacity = "0.2"
         oneBook.style.display = "block";
+        oneBook.style.position = "relative"
+        
         
       }
       const mouseOut = () => {
         cover.style.display = "block";
+        cover.style.opacity = "1"
         oneBook.style.display = "none";
+        cover.style.position = "relative"
+        oneBook.style.position = "absolute"
+        
       }
 
       

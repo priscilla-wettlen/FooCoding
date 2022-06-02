@@ -1,15 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto&display=swap');
+
 body{
-  background-image: linear-gradient(to bottom right, rgb(252, 252, 252), rgb(38, 99, 125));
+  background-image: url("img/kiwihug-3gifzboyZk0-unsplash.jpg");
   background-size: cover;
-  margin: 20px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 30px;
+  font-family: 'Roboto', sans-serif;
 }
 
 main{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+.top{
+  width: 400px;
+}
+.headline{
+  font-family: 'Merriweather', serif;
+  font-size: 62px;
+  font-weight: 700;
+  margin-top: 10px;
+}
 
+.subheadline{
+  font-family: 'Merriweather', serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 46px;
+}
 :nth-child(1){
   grid-column-start: 1;
   grid-column-end: 1;
@@ -28,18 +45,31 @@ main{
 .book{
   display: flex;
   flex-direction: column;
-  width: 300px;
+  align-items: center;
+  width: 250px;
   margin: 20px;
+  padding: 20px;
   
 }
 
-img{
-  width: 250px;
-  height: auto;
-  margin: 20px;
+h1{
+  font-family: 'Merriweather', serif;
+  font-size: 28px;
 }
 
-img:hover{
-  opacity: 0.3;
-  color: rgb(0, 0, 0);
+img{
+  width: 300px;
+  height: auto;
+  margin: 20px;
+  box-shadow: 7px 5px 7px rgb(0, 0, 0, 0.4);
+}
+
+a{
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+a:hover{
+  cursor: pointer;
+  text-decoration: underline;
 }
