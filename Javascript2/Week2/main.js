@@ -152,15 +152,23 @@ choose the correct HTML elements for each piece of info, for instance, a heading
         year.innerHTML = year.innerHTML += myBooks[key].year;
         lang.innerHTML = lang.innerHTML += myBooks[key].language;
         main.appendChild(bookSection);
-      bookSection.appendChild(oneBook)
-      //cover.appendChild(oneBook)
+        bookSection.appendChild(cover)
+        bookSection.appendChild(oneBook)
+        //cover.appendChild(oneBook)
         oneBook.appendChild(h1);
         oneBook.appendChild(h2);
         oneBook.appendChild(year);
-      oneBook.appendChild(lang);
+        oneBook.appendChild(lang);
       
       //When mouseover, the text appears instead of img, but text is still visible without hovering
       
+
+      const onLoad = () => {
+        oneBook.style.display = "none"
+        cover.style.display = "block"
+      }
+
+      cover.addEventListener("load", onLoad);
 
       const mouseOver = () => {
         cover.style.display = "none";
@@ -169,9 +177,10 @@ choose the correct HTML elements for each piece of info, for instance, a heading
       }
       const mouseOut = () => {
         cover.style.display = "block";
-        oneBook.style.display = "hidden";
+        oneBook.style.display = "none";
       }
 
+      
       cover.addEventListener("mouseover", mouseOver)
       cover.addEventListener("mouseout", mouseOut)
 

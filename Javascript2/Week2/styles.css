@@ -1,5 +1,7 @@
 body{
-  margin: 30px;
+  background-image: linear-gradient(to bottom right, rgb(252, 252, 252), rgb(38, 99, 125));
+  background-size: cover;
+  margin: 20px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -27,6 +29,7 @@ main{
   display: flex;
   flex-direction: column;
   width: 300px;
+  margin: 20px;
   
 }
 
