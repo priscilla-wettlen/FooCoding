@@ -131,12 +131,6 @@ language and author. */
   }
 
   
-
-/* 
-1.5 Now change the function from step 1.3 that you used to display the book ID's in a list 
-to take the actual information about the book from the object and display that. Make sure you 
-choose the correct HTML elements for each piece of info, for instance, a heading for the title.
-*/
   
   
   function displayBooks() {
@@ -160,6 +154,7 @@ choose the correct HTML elements for each piece of info, for instance, a heading
       const info = document.createElement("a")
       info.setAttribute("href", myBooks[key].info)
       info.setAttribute("alt", "Click to view more information about this book")
+      info.setAttribute("target", "_blank")
       info.style.cursor = "pointer";
         h1.innerHTML = h1.innerHTML += myBooks[key].title;
         h2.innerHTML = h2.innerHTML += myBooks[key].author;
@@ -177,7 +172,6 @@ choose the correct HTML elements for each piece of info, for instance, a heading
         oneBook.appendChild(info);
       
       
-      //When mouseover, the text appears instead of img, but text is still visible without hovering
       
 
       const onLoad = () => {
@@ -191,7 +185,7 @@ choose the correct HTML elements for each piece of info, for instance, a heading
         //cover.style.display = "none";
         cover.style.position = "absolute"
         cover.style.opacity = "0.2"
-        oneBook.style.display = "block";
+        oneBook.style.display = "block"
         oneBook.style.position = "relative"
         
         
@@ -216,72 +210,7 @@ choose the correct HTML elements for each piece of info, for instance, a heading
  
   displayBooks();
 
-  /* 1.7 Find and download book covers for each book and construct a new object which has as 
-keys the book IDs again, and as value the path to the image source 
-(e.g. { harry_potter_blabla: './img/harry_potter_blabla.jpg', ... }). */
-
-  // let bookCovers = {
-  //   batallas: "img/batallas.jpeg",
-  //   potter: "img/halfblood.jpeg",
-  //   hunger: "img/hunger.jpg",
-  //   senoras: "img/emma_narco.jpeg",
-  //   pride: "img/pride.jpeg",
-  //   eightyfour: "img/1984.jpg",
-  //   huracanes: "img/huracanes.jpeg",
-  //   utvandrarna: "img/utvandrarna.jpeg",
-  //   gloria: "img/gloria.jpeg",
-  //   heights: "img/heights.jpeg"
-  // }
-
-  /* 1.8 Loop over these entries (hint: Object.keys(objectName) gives you an array containing 
-  the keys). Then write a function which places an image at the corresponding li element. 
-  Remember that objects are not ordered, so you cannot guarantee that the first key is the 
-  first li element. (Hint: you could give each li item an id tag by modifying the function you 
-  made before.)*/
-
-  // function displayCovers() {
-  //   for (let key in bookCovers) {
-  //     const main = document.querySelector("main");
-  //     const cover = document.createElement("img")
-  //     cover.setAttribute("src", bookCovers[key])
-  //     cover.setAttribute("alt", "book cover")
-  //     main.appendChild(cover)
-
-  //     const mouseEnter = () => {
-  //     const main = document.querySelector("main");
-  //     const bookSection = document.createElement("div");
-  //     bookSection.setAttribute("class", "book_section");
-  //     const oneBook = document.createElement("div");
-  //     oneBook.setAttribute("class", "book");
-  //     const h1 = document.createElement("h1");
-  //     const h2 = document.createElement("h2");
-  //     const year = document.createElement("p", ".year")
-  //     const lang = document.createElement("p", ".lang")
-  //     h1.innerHTML = h1.innerHTML += myBooks[key].title;
-  //     h2.innerHTML = h2.innerHTML += myBooks[key].author;
-  //     year.innerHTML = year.innerHTML += myBooks[key].year;
-  //     lang.innerHTML = lang.innerHTML += myBooks[key].language;
-  //     main.appendChild(bookSection);
-  //     //bookSection.appendChild(cover)
-  //     cover.appendChild(oneBook)
-  //     oneBook.appendChild(h1);
-  //     oneBook.appendChild(h2);
-  //     oneBook.appendChild(year);
-  //     oneBook.appendChild(lang);
-      
-       
-  //     }
-  //     const mouseLeave = () => " "
-
-  //     cover.addEventListener("mouseenter", mouseEnter)
-  //     cover.addEventListener("mouseleave", mouseLeave)
-  //   }
-
-    
-  // }
-  // displayCovers();
-
-        
+  
     
 
   
