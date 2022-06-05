@@ -130,5 +130,5 @@ const tuesday = [
   }
 ];
 
-const taskDays = [monday.map(x => x), tuesday.map(x => x)]
+const taskDays = [monday.map(x => x.duration), tuesday.map(x => x.duration)]
 console.log(taskDays);
