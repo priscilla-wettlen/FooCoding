@@ -99,11 +99,15 @@ console.log(filteredHours)
 
 //Multiply the each duration by a per-hour rate for billing (use €20/hour) and sum it all up.
 
-let totalHours = filteredHours[0].concat(filteredHours[1])
-console.log(totalHours)
+const totalHours = filteredHours[0].concat(filteredHours[1])
 
-// const sum = filteredHours.reduce((accumulator, currentValue) => {
-//   return accumulator + currentValue;
-// }, 0);
+const sum = totalHours.reduce((accumulator, currentValue) => {
+  return accumulator + currentValue;
+}, 0);
 
-// console.log(sum);
+console.log(sum);
+
+totalEarnings = (sum / 60) * 20
+
+//Output a formatted Euro amount, rounded to Euro cents, e.g: €11.34.
+console.log(`Maartje's total earnings for two days of work were €${totalEarnings}.00`);
