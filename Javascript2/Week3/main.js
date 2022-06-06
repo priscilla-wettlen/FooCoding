@@ -130,5 +130,10 @@ const tuesday = [
   }
 ];
 
+//Map the tasks to durations in hours.
 const taskDays = [monday.map(x => x.duration), tuesday.map(x => x.duration)]
 console.log(taskDays);
+
+//Filter out everything that took less than two hours (i.e., remove from the collection)
+const filteredHours = [taskDays[0].filter(x => x >= 120), taskDays[1].filter(x => x >= 120)];
+console.log(filteredHours)
