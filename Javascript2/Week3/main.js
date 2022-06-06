@@ -28,48 +28,6 @@ console.log(doubleOddNumbers);
 /* 
 1.2 Underneath you see a very interesting small insight in Maartje's work:
 
-const monday = [
-  {
-    name: 'Write a summary HTML/CSS',
-    duration: 180
-  },
-  {
-    name: 'Some web development',
-    duration: 120
-  },
-  {
-    name: 'Fix homework for class10',
-    duration: 20
-  },
-  {
-    name: 'Talk to a lot of people',
-    duration: 1.0
-  }
-];
-
-const tuesday = [
-  {
-    name: 'Keep writing summary',
-    duration: 1.0
-  },
-  {
-    name: 'Some more web development',
-    duration: 180
-  },
-  {
-    name: 'Staring out the window',
-    duration: 10
-  },
-  {
-    name: 'Talk to a lot of people',
-    duration: 1.0
-  },
-  {
-    name: 'Look at application assignments new students',
-    duration: 40
-  }
-];
-
 Note: the durations are specified in minutes.
 
 Write a program that computes how much Maartje has earned by completing these tasks, 
@@ -132,8 +90,20 @@ const tuesday = [
 
 //Map the tasks to durations in hours.
 const taskDays = [monday.map(x => x.duration), tuesday.map(x => x.duration)]
-console.log(taskDays);
+//console.log(taskDays);
 
 //Filter out everything that took less than two hours (i.e., remove from the collection)
 const filteredHours = [taskDays[0].filter(x => x >= 120), taskDays[1].filter(x => x >= 120)];
 console.log(filteredHours)
+
+
+//Multiply the each duration by a per-hour rate for billing (use €20/hour) and sum it all up.
+
+let totalHours = filteredHours[0].concat(filteredHours[1])
+console.log(totalHours)
+
+// const sum = filteredHours.reduce((accumulator, currentValue) => {
+//   return accumulator + currentValue;
+// }, 0);
+
+// console.log(sum);
