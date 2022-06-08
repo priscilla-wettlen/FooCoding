@@ -15,9 +15,18 @@ const poke = JSON.parse(fetchPokemonData());
 let pokeSprites = []
 pokeSprites = poke.sprites
 
+const main = document.querySelector("main")
+const test = document.createElement("div");
+main.appendChild(test);
+
 for (const [key, value] of Object.entries(pokeSprites)) {
   console.log(`${key}: ${value}`);
+  const first = document.createElement("p");
+  first.innerHTML += (`${key}: ${value}`);
+  test.appendChild(first)
+
 }
+
 
 
 
