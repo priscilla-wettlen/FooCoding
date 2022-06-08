@@ -15,31 +15,88 @@ const poke = JSON.parse(fetchPokemonData());
 let pokeSprites = []
 pokeSprites = poke.sprites
 
+const body = document.querySelector("body")
+body.addEventListener("mousemove", function (e) {
+  x = e.offsetX;
+  y = e.offsetY;
+  body.style.backgroundColor = `rgb(${x}, ${y}, ${x - y})`;
+});
 const main = document.querySelector("main")
 const imageContainer = document.createElement("div");
+imageContainer.setAttribute("class", "imgContainer");
 main.appendChild(imageContainer);
 
 
-// for (const [key, value] of Object.entries(pokeSprites)) {
-//   console.log(`${key}: ${value}`);
-  
-// }
+
+
+
+
+
+
+const front_default = document.createElement("img")
+  front_default.setAttribute("src", pokeSprites.front_default)
+  imageContainer.appendChild(front_default)
 
 const back_default = document.createElement("img")
   back_default.setAttribute("src", pokeSprites.back_default)
 imageContainer.appendChild(back_default)
-  
-const front_default = document.createElement("img")
-  front_default.setAttribute("src", pokeSprites.front_default)
-  imageContainer.appendChild(front_default)
+
+const front_shiny = document.createElement("img")
+  front_shiny.setAttribute("src", pokeSprites.front_shiny)
+  imageContainer.appendChild(front_shiny)
 
 const back_shiny = document.createElement("img")
   back_shiny.setAttribute("src", pokeSprites.back_shiny)
   imageContainer.appendChild(back_shiny)
 
-const front_shiny = document.createElement("img")
-  front_shiny.setAttribute("src", pokeSprites.front_shiny)
-  imageContainer.appendChild(front_shiny)
+const spinning = [
+  { transform: 'rotate(180deg) scale(1)' },
+  { transform: 'rotate(-180deg) scale(1)' }
+];
+
+const timing = {
+  duration: 2000,
+  iterations: 100,
+}
+
+
+const btn = document.createElement("input")
+btn.setAttribute("class", ".party")
+btn.setAttribute("type", "button")
+btn.setAttribute("value", "PARTY!")
+main.appendChild(btn)
+
+btn.addEventListener('click', () => {
+  front_default.animate(spinning, timing)
+  back_default.animate(spinning, timing)
+  front_shiny.animate(spinning, timing)
+  back_shiny.animate(spinning, timing)
+});
+
+
+
+const song = document.createElement("audio");
+song.setAttribute("src", "audio/pokemon_song.mp3")
+song.setAttribute("controls", "controls")
+song.setAttribute("autoplay", "false")
+
+function playSong() {
+  //song.play()
+  main.appendChild(song)  
+
+};
+
+main.addEventListener('load', playSong());
+
+
+
+
+
+
+
+
+
+
 
 
 

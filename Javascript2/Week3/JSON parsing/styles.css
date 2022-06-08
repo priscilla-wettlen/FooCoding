@@ -1,0 +1,18 @@
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+img{
+  width: 150px;
+  height: auto;
+}
+
+audio{
+  margin: 30px;
+}
+audio::-webkit-media-controls-panel {
+  background-color: rgb(192, 255, 246);
+}
