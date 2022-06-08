@@ -29,10 +29,6 @@ main.appendChild(imageContainer);
 
 
 
-
-
-
-
 const front_default = document.createElement("img")
   front_default.setAttribute("src", pokeSprites.front_default)
   imageContainer.appendChild(front_default)
@@ -78,7 +74,7 @@ btn.addEventListener('click', () => {
 const song = document.createElement("audio");
 song.setAttribute("src", "audio/pokemon_song.mp3")
 song.setAttribute("controls", "controls")
-song.setAttribute("autoplay", "false")
+song.setAttribute("autoplay", "true")
 
 function playSong() {
   //song.play()
