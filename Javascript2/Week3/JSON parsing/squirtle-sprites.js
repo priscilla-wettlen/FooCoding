@@ -19,18 +19,27 @@ const main = document.querySelector("main")
 const imageContainer = document.createElement("div");
 main.appendChild(imageContainer);
 
-for (const [key, value] of Object.entries(pokeSprites)) {
-  console.log(`${key}: ${value}`);
-  const first = document.createElement("img");
-  first.setAttribute("src", value)
-  if(value !== null) imageContainer.appendChild(first)
+
+// for (const [key, value] of Object.entries(pokeSprites)) {
+//   console.log(`${key}: ${value}`);
   
-}
+// }
 
+const back_default = document.createElement("img")
+  back_default.setAttribute("src", pokeSprites.back_default)
+imageContainer.appendChild(back_default)
+  
+const front_default = document.createElement("img")
+  front_default.setAttribute("src", pokeSprites.front_default)
+  imageContainer.appendChild(front_default)
 
+const back_shiny = document.createElement("img")
+  back_shiny.setAttribute("src", pokeSprites.back_shiny)
+  imageContainer.appendChild(back_shiny)
 
-
-
+const front_shiny = document.createElement("img")
+  front_shiny.setAttribute("src", pokeSprites.front_shiny)
+  imageContainer.appendChild(front_shiny)
 
 
 
