@@ -10,11 +10,15 @@ function fetchPokemonData() {
 
 /* Code goes below */
 const poke = JSON.parse(fetchPokemonData());
-console.log(poke);
+//console.log(poke);
 
 let pokeSprites = []
 pokeSprites = poke.sprites
-console.log(pokeSprites.length)
+
+for (const [key, value] of Object.entries(pokeSprites)) {
+  console.log(`${key}: ${value}`);
+}
+
 
 
 
