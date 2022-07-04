@@ -1,0 +1,6 @@
+@use 'variables';
+
+h1{
+  font-size: 72px;
+  font-family: variables.$font1;
+}
