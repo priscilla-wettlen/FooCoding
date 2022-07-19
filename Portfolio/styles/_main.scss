@@ -1,0 +1,9 @@
+@use 'variables';
+
+h2{
+  font-family: variables.$font1;
+}
+
+.sect-txt{
+  font-family: variables.$font2;
+}

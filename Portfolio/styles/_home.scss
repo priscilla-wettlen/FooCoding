@@ -1,6 +1,12 @@
 @use 'variables';
 
+#home{
+  margin: 50px;
+}
+
 h1{
-  font-size: 72px;
+  font-size: 110px;
   font-family: variables.$font1;
+  color: variables.$blackish;
+  line-height: 115%;
 }

@@ -1,2 +1,8 @@
 @use 'variables';
+@import 'header';
 @import 'home';
+@import 'main';
+
+body{
+  background-color: variables.$khakhi;
+}
