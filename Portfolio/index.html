@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-    <i class="fa-solid fa-circle"></i> <!--<span class="menu-txt">menu</span>-->
+    <i class="fa-solid fa-circle" title="menu"></i> <!--<span class="menu-txt">menu</span>-->
   <nav>
     <ul>
       <a href="#"><li>home</li></a>
@@ -45,9 +45,13 @@
     <section id="contact">
       <div class="sect_content">
         <h2>contact me</h2>
-          <p class="sect-txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id odit tempora, 
-            minima doloribus totam modi impedit at sed, ratione dolor, vero repellat nihil 
-            ullam reiciendis. Possimus accusamus deserunt nesciunt molestias.</p>
+          <form action="contact" class="contact_form">
+            <input type="text" name="name" id="name" placeholder="your name">
+            <input type="email" name="email" id="email" placeholder="your e-mail">
+            <input type="text" name="subject" id="subject" placeholder="subject">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="your message"></textarea>
+            <input type="submit" value="submit">
+          </form>
       </div>
     </section>
     <section id="blog">
