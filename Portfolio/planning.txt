@@ -1,0 +1,5 @@
+- Make a parallax effect with circles in the background of the sections
+- Make a menu that covers the full page
+- Add a carrouselle with works
+- Connect contact form to a server
+- Fetch blog API
