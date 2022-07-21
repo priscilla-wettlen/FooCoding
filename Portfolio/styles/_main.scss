@@ -2,16 +2,19 @@
 
 h2{
   font-family: variables.$font1;
+  font-size: 72px;
 }
 
 .sect-txt{
   font-family: variables.$font2;
+  font-size: 22px;
 }
 
 #about, #contact{
   background-color: variables.$orangy;
   margin: 0px;
   padding: 0px;
+  
 }
 
 #work, #blog{
@@ -19,6 +22,6 @@ h2{
   padding: 0px;
 }
 
-.about_content, .work_content, .contact_content, .blog_content{
+.sect_content{
   padding: 50px;
 }
