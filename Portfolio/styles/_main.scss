@@ -7,3 +7,18 @@ h2{
 .sect-txt{
   font-family: variables.$font2;
 }
+
+#about, #contact{
+  background-color: variables.$orangy;
+  margin: 0px;
+  padding: 0px;
+}
+
+#work, #blog{
+  margin: 0px;
+  padding: 0px;
+}
+
+.about_content, .work_content, .contact_content, .blog_content{
+  padding: 50px;
+}

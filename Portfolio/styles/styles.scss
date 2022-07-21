@@ -2,7 +2,10 @@
 @import 'header';
 @import 'home';
 @import 'main';
+@import 'footer';
 
 body{
   background-color: variables.$khakhi;
+  margin: 0px;
+  padding: 0px;
 }
