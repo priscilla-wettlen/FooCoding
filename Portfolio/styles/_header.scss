@@ -1,10 +1,13 @@
 header{
   display: flex;
   justify-content: flex-end;
+  position: sticky;
+  top: 0.01px;
 }
 .fa-solid{
   padding: 30px;
   font-size: 32px;
+  
 }
 
 nav{

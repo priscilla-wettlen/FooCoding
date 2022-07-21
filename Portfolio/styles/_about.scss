@@ -1,0 +1,16 @@
+#about{
+  display: flex;
+  justify-content: space-between;
+}
+
+.about_pic{
+  padding: 50px;
+  padding-right: 80px;
+}
+
+.img_ps{
+  object-fit: cover;
+  width:600px;
+  height:600px;
+  border-radius: 360px;
+}
