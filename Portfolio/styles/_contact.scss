@@ -48,6 +48,7 @@ textarea{
   border: 0px;
   border-radius: 3px;
   color:variables.$blackish;
+  cursor: pointer;
   &:hover{
     background-color: #e3cebb;
     transition: 0.3s;
