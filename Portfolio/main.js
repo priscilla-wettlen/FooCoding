@@ -11,21 +11,34 @@ function closeNav() {
 //Works Carousel
 const track = document.querySelector('.carousel__track');
 const slides = Array.from(track.children);
-const nextButton = document.querySelector('.left');
-const prevButton = document.querySelector('.right');
+const nextButton = document.querySelector('.right');
+const prevButton = document.querySelector('.left');
 const dotNav = document.querySelector('.carousel__nav')
 const dots = Array.from(dotNav.children);
 
 const slideWidth = slides[0].getBoundingClientRect().width;
 
 //arrange slides to be next to each other
-slides[0].style.left = slideWidth * 0 + 'px';
-slides[1].style.left = slideWidth * 1 + 'px';
-slides[2].style.left = slideWidth * 2 + 'px';
-slides[3].style.left = slideWidth * 3 + 'px';
-slides[4].style.left = slideWidth * 4 + 'px';
 
+const setSlidePosition = (slide, index) => {
+  slide.style.left = slideWidth * index + "px";
+} //index is the index of each array element
+
+slides.forEach(setSlidePosition); 
 
 //when i click left, move slides to the left
 //when i click right, move slides to the right
+nextButton.addEventListener('click', e => {
+  const currentSlide = track.querySelector('.current-slide')
+  const nextSlide = currentSlide.nextElementSibling;
+  const amountToMove = nextSlide.style.left;
+
+  console.log(amountToMove);
+
+  //move to the next slide
+  track.style.transform = 'translateX(-' + amountToMove + ')';
+
+})
+
+
 //when i click indicators, move to that slide
