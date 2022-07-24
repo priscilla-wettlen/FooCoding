@@ -26,19 +26,33 @@ const setSlidePosition = (slide, index) => {
 
 slides.forEach(setSlidePosition); 
 
+const moveToSlide = (track, currentSlide, targetSlide) => {
+  track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
+  currentSlide.classList.remove('current-slide');
+  targetSlide.classList.add('current-slide');
+}
 //when i click left, move slides to the left
+prevButton.addEventListener('click', e => {
+  const currentSlide = track.querySelector('.current-slide')
+  const prevSlide = currentSlide.previousElementSibling;
+
+  moveToSlide(track, currentSlide, prevSlide);
+})
+
 //when i click right, move slides to the right
 nextButton.addEventListener('click', e => {
   const currentSlide = track.querySelector('.current-slide')
   const nextSlide = currentSlide.nextElementSibling;
-  const amountToMove = nextSlide.style.left;
 
-  console.log(amountToMove);
+  moveToSlide(track, currentSlide, nextSlide);
+  // const amountToMove = nextSlide.style.left;
 
-  //move to the next slide
-  track.style.transform = 'translateX(-' + amountToMove + ')';
+  // console.log(amountToMove);
 
+  // //move to the next slide
+  // track.style.transform = 'translateX(-' + amountToMove + ')';
+  // currentSlide.classList.remove('current-slide');
+  // nextSlide.classList.add('current-slide');
 })
-
 
 //when i click indicators, move to that slide
