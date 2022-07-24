@@ -1,5 +1,10 @@
-- Make a parallax effect with circles in the background of the sections
-- Make a menu that covers the full page
+TO DO
 - Add a carrouselle with works
 - Connect contact form to a server
 - Fetch blog API
+
+IF THERE'S TIME
+- Make a parallax effect with circles in the background of the sections
+
+DONE
+- Make a menu that covers the full page

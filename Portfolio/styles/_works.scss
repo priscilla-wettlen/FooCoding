@@ -1,0 +1,55 @@
+.carousel{
+  position: relative;
+  height: 400px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+
+.carousel__image{
+  object-fit:cover;
+  width: 400px;
+  height: 400px;
+}
+
+.carousel__track-container{
+  background-color: lightgreen;
+  height: 100%;
+  position: relative;
+}
+
+.carousel__track{
+  padding: 0;
+  margin:0;
+  list-style: none;
+}
+
+.carousel__slide{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 400px;
+}
+
+//remember to remove blue bg and green border!!!
+.carousel__button{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: blue;
+  border: 1px solid lightgreen;
+  padding: 10px;
+}
+.left{
+  left: -30px;
+  cursor: pointer;
+}
+
+.right{
+  right: -30px;
+  cursor: pointer;
+}
+
+.carousel__nav{
+  background-color: blueviolet;
+}
