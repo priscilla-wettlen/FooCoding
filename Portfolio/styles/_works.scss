@@ -1,18 +1,28 @@
 .carousel{
   position: relative;
-  height: 400px;
-  width: 400px;
+  width: 800px;
   margin: 0 auto;
+  animation-name: appear;
+  animation-duration: 6s;
+}
+
+@keyframes appear{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
 
 .carousel__image{
-  object-fit:cover;
-  width: 400px;
-  height: 400px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .carousel__track-container{
-  background-color: lightgreen;
+  width: 100%;
   height: 100%;
   position: relative;
   overflow: hidden;
@@ -23,6 +33,7 @@
   margin:0;
   list-style: none;
   position: relative;
+  width: 100%;
   height: 400px;
   transition: transform 0.25s ease-in;
 }
@@ -31,7 +42,7 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 400px;
+  width: 100%;
 }
 
 //remember to remove blue bg and green border!!!
@@ -39,17 +50,17 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: blue;
-  border: 1px solid lightgreen;
+  background: transparent;
+  border: 0px;
   padding: 10px;
 }
 .left{
-  left: -30px;
+  left: -40px;
   cursor: pointer;
 }
 
 .right{
-  right: -30px;
+  right: -40px;
   cursor: pointer;
 }
 

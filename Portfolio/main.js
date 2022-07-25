@@ -1,11 +1,14 @@
 //-----Overlay Navbar-----//
 function openNav() {
   document.querySelector(".overlay").style.width = "100%";
+  document.querySelector('.carousel').style.display = 'none';
 }
 
 function closeNav() {
   document.querySelector(".overlay").style.width = "0%";
+  document.querySelector('.carousel').style.display = 'block';
 }
+
 
 
 //---------Works Carousel-----------//
@@ -101,3 +104,10 @@ dotNav.addEventListener('click', e => {
 
   hideShowArrows(slides, prevButton, nextButton, targetIndex);
 })
+
+// hideCarousel = () => {
+//   const overlay = document.querySelector('.overlay');
+//   const overlaycont = document.querySelector('.overlay-content');
+
+
+// }

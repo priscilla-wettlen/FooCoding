@@ -39,6 +39,7 @@ header{
   text-align: center;
   margin-top: 30px;
   list-style: none;
+  z-index: 2;
 }
 
 .overlay a {
@@ -48,6 +49,7 @@ header{
   color: variables.$khakhi;
   display: block;
   transition: 0.3s;
+  z-index: 2;
 }
 
 .overlay a:hover, .overlay a:focus {
@@ -59,4 +61,5 @@ header{
   top: 20px;
   right: 30px;
   font-size: 35px;
+  z-index: 2;
 }
