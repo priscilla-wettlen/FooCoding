@@ -1,4 +1,4 @@
-//Overlay Navbar
+//-----Overlay Navbar-----//
 function openNav() {
   document.querySelector(".overlay").style.width = "100%";
 }
@@ -8,7 +8,7 @@ function closeNav() {
 }
 
 
-//Works Carousel
+//---------Works Carousel-----------//
 const track = document.querySelector('.carousel__track');
 const slides = Array.from(track.children);
 const nextButton = document.querySelector('.right');
@@ -38,15 +38,32 @@ const updateDots = (currentDot, targetDot) => {
     targetDot.classList.add('current-slide');
 }
 
+//to make arrow buttons dissappear when one reaches the start or end of carousel.
+//Also works with dot indicators
+const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
+  if (targetIndex === 0) {
+    prevButton.classList.add('is-hidden');
+    nextButton.classList.remove('is-hidden');
+  } else if (targetIndex === slides.length - 1) {
+    prevButton.classList.remove('is-hidden');
+    nextButton.classList.add('is-hidden');
+  } else {
+    prevButton.classList.remove('is-hidden');
+    nextButton.classList.remove('is-hidden');
+  }
+}
+
 //when i click left, move slides to the left
 prevButton.addEventListener('click', e => {
   const currentSlide = track.querySelector('.current-slide')
   const prevSlide = currentSlide.previousElementSibling;
   const currentDot = dotNav.querySelector('.current-slide');
   const prevDot = currentDot.previousElementSibling;
+  const prevIndex = slides.findIndex(slide => slide === prevSlide);
 
   moveToSlide(track, currentSlide, prevSlide);
   updateDots(currentDot, prevDot);
+  hideShowArrows(slides, prevButton, nextButton, prevIndex);
 })
 
 //when i click right, move slides to the right
@@ -55,17 +72,12 @@ nextButton.addEventListener('click', e => {
   const nextSlide = currentSlide.nextElementSibling;
   const currentDot = dotNav.querySelector('.current-slide');
   const nextDot = currentDot.nextElementSibling;
+  const nextIndex =  slides.findIndex(slide => slide === nextSlide)
 
   moveToSlide(track, currentSlide, nextSlide);
   updateDots(currentDot, nextDot);
-  // const amountToMove = nextSlide.style.left;
+  hideShowArrows(slides, prevButton, nextButton, nextIndex);
 
-  // console.log(amountToMove);
-
-  // //move to the next slide
-  // track.style.transform = 'translateX(-' + amountToMove + ')';
-  // currentSlide.classList.remove('current-slide');
-  // nextSlide.classList.add('current-slide');
 })
 
 //when i click indicators, move to that slide
@@ -85,6 +97,7 @@ dotNav.addEventListener('click', e => {
   currentDot.classList.remove('current-slide');
   targetDot.classList.add('current-slide');
 
-
   updateDots(currentDot, targetDot);
+
+  hideShowArrows(slides, prevButton, nextButton, targetIndex);
 })
