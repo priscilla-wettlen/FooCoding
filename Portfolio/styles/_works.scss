@@ -1,6 +1,18 @@
+#work {
+  background-color: variables.$blackish;
+}
+
+h2{
+  color: variables.$khakhi;
+}
+.svg{
+  filter: invert(95%) sepia(6%) saturate(968%) hue-rotate(324deg) brightness(95%) contrast(97%);
+}
+
 .carousel{
   position: relative;
   width: 800px;
+  height: 500px;
   margin: 0 auto;
   animation-name: appear;
   animation-duration: 6s;
@@ -17,15 +29,16 @@
 
 .carousel__image{
   object-fit: cover;
-  width: 100%;
+  width: 800px;
   height: 100%;
 }
 
 .carousel__track-container{
-  width: 100%;
-  height: 100%;
+  width: 800px;
+  height: 500px;
   position: relative;
   overflow: hidden;
+  background-color: variables.$khakhi;
 }
 
 .carousel__track{
@@ -33,16 +46,17 @@
   margin:0;
   list-style: none;
   position: relative;
-  width: 100%;
   height: 400px;
   transition: transform 0.25s ease-in;
+  
 }
 
 .carousel__slide{
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 100%;
+  width: 800px;
+  
 }
 
 //remember to remove blue bg and green border!!!

@@ -69,6 +69,18 @@ prevButton.addEventListener('click', e => {
   hideShowArrows(slides, prevButton, nextButton, prevIndex);
 })
 
+prevButton.addEventListener('ArrowLeft', e => {
+  const currentSlide = track.querySelector('.current-slide')
+  const nextSlide = currentSlide.nextElementSibling;
+  const currentDot = dotNav.querySelector('.current-slide');
+  const nextDot = currentDot.nextElementSibling;
+  const nextIndex =  slides.findIndex(slide => slide === nextSlide)
+
+  moveToSlide(track, currentSlide, nextSlide);
+  updateDots(currentDot, nextDot);
+  hideShowArrows(slides, prevButton, nextButton, nextIndex);
+})
+
 //when i click right, move slides to the right
 nextButton.addEventListener('click', e => {
   const currentSlide = track.querySelector('.current-slide')
@@ -82,6 +94,18 @@ nextButton.addEventListener('click', e => {
   hideShowArrows(slides, prevButton, nextButton, nextIndex);
 
 })
+nextButton.addEventListener('ArrowRight', e => {
+  const currentSlide = track.querySelector('.current-slide')
+  const nextSlide = currentSlide.nextElementSibling;
+  const currentDot = dotNav.querySelector('.current-slide');
+  const nextDot = currentDot.nextElementSibling;
+  const nextIndex =  slides.findIndex(slide => slide === nextSlide)
+
+  moveToSlide(track, currentSlide, nextSlide);
+  updateDots(currentDot, nextDot);
+  hideShowArrows(slides, prevButton, nextButton, nextIndex);
+})
+
 
 //when i click indicators, move to that slide
 dotNav.addEventListener('click', e => {
