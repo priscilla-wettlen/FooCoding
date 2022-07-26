@@ -1,10 +1,46 @@
 #work {
   background-color: variables.$blackish;
+  height:650px;
+  padding: 50px;
 }
 
-h2{
+.sect_content-work{
+  display: flex;
+  justify-content: space-between;
+  align-items: fle;
+}
+
+.work__headline{
   color: variables.$khakhi;
 }
+
+h3{
+  font-family: variables.$font1;
+  line-height: 10px;
+  color: variables.$khakhi;
+}
+
+.section_content-work-info{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.section_content-work-info p{
+  color: variables.$khakhi;
+  font-family: variables.$font2;
+}
+
+.carousel__slide-text{
+  padding-top: 0px;
+  padding: 10px;
+}
+.carousel__slide-text p{
+  font-family: variables.$font2;
+  font-size: 16px;
+  color: variables.$khakhi;
+}
+
 .svg{
   filter: invert(95%) sepia(6%) saturate(968%) hue-rotate(324deg) brightness(95%) contrast(97%);
 }
@@ -12,33 +48,34 @@ h2{
 .carousel{
   position: relative;
   width: 800px;
-  height: 500px;
+  height: 600px;
   margin: 0 auto;
-  animation-name: appear;
-  animation-duration: 6s;
+  //animation-name: appear;
+  //animation-duration: 6s;
 }
 
-@keyframes appear{
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
-}
+// @keyframes appear{
+//   from{
+//     opacity: 0;
+//   }
+//   to{
+//     opacity: 1;
+//   }
+// }
 
 .carousel__image{
   object-fit: cover;
   width: 800px;
-  height: 100%;
+  height: 500px;
+  border-radius: 10%;
 }
 
 .carousel__track-container{
   width: 800px;
-  height: 500px;
+  height: 630px;
   position: relative;
   overflow: hidden;
-  background-color: variables.$khakhi;
+  background-color: transparent;
 }
 
 .carousel__track{
@@ -46,7 +83,7 @@ h2{
   margin:0;
   list-style: none;
   position: relative;
-  height: 400px;
+  height: 500px;
   transition: transform 0.25s ease-in;
   
 }
@@ -56,10 +93,19 @@ h2{
   top: 0;
   bottom: 0;
   width: 800px;
-  
+  //animation: fade;
+  //animation-duration: 5s;
 }
 
-//remember to remove blue bg and green border!!!
+// @keyframes fade {
+//   from{
+//     opacity: 1;
+//   }
+//   to{
+//     opacity: 0;
+//   }
+// }
+
 .carousel__button{
   position: absolute;
   top: 50%;
@@ -90,12 +136,12 @@ h2{
   width: 10px;
   height: 10px;
   margin: 0 12px;
-  background-color: rgb(0, 0, 0,0.3);
+  background-color: rgb(239, 221, 205, 0.3);
   cursor: pointer;
 }
 
 .carousel__indicator.current-slide{
-  background-color: rgb(0, 0, 0, 0.75);
+  background-color: rgb(239, 221, 205, 0.7);
 }
 
 .is-hidden{
