@@ -16,8 +16,19 @@
 
 h3{
   font-family: variables.$font1;
+  font-size: 16px;
   line-height: 10px;
   color: variables.$khakhi;
+  text-align: center;
+  
+}
+
+.carousel__slide-text p{
+  font-family: variables.$font2;
+  font-size: 14px;
+  color: variables.$khakhi;
+  text-align: center;
+  
 }
 
 .section_content-work-info{
@@ -35,11 +46,7 @@ h3{
   padding-top: 0px;
   padding: 10px;
 }
-.carousel__slide-text p{
-  font-family: variables.$font2;
-  font-size: 16px;
-  color: variables.$khakhi;
-}
+
 
 .svg{
   filter: invert(95%) sepia(6%) saturate(968%) hue-rotate(324deg) brightness(95%) contrast(97%);
