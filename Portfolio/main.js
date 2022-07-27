@@ -129,9 +129,15 @@ dotNav.addEventListener('click', e => {
   hideShowArrows(slides, prevButton, nextButton, targetIndex);
 })
 
-// hideCarousel = () => {
-//   const overlay = document.querySelector('.overlay');
-//   const overlaycont = document.querySelector('.overlay-content');
 
+//----------Blog API-------------//
 
-// }
+let url = 'https://public-api.wordpress.com/rest/v1.1/sites/thepwordbypriscillaixd.wordpress.com/posts/?number=2&pretty=true';
+
+fetch(url)
+  .then((res) => {
+    return res.json();
+  })
+  .then((data) => {
+    console.log(data.posts[0]);
+  });
