@@ -1,16 +1,28 @@
-.blog__title{
+.blog__content{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+}
+
+.blog__content-1, .blog__content-2{
+  width: 500px;
+  padding-right: 100px;
+}
+
+.blog__title-1, .blog__title-2{
   color: variables.$blackish;
   font-size: 28px;
   line-height: 100%;
 }
 
-.blog__post{
+.blog__post-1, .blog__post-2{
   font-family: variables.$font2;
   font-size: 22px;
   color: variables.$blackish;
 }
 
-#continue-reading{
+#continue-reading-1, #continue-reading-2{
   font-family: variables.$font2;
   font-size: 16px;
   text-decoration: none;

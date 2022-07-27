@@ -145,15 +145,23 @@ fetch(url)
 
     console.log(posts)
 
-    const title = document.querySelector(".blog__title");
-    const blogPost = document.querySelector('.blog__post');
-    const continueReading = document.querySelector('#continue-reading');
+    const title = document.querySelector(".blog__title-1");
+    const blogPost = document.querySelector('.blog__post-1');
+    const continueReading = document.querySelector('#continue-reading-1');
+    const title2 = document.querySelector(".blog__title-2");
+    const blogPost2 = document.querySelector('.blog__post-2');
+    const continueReading2 = document.querySelector('#continue-reading-2');
     
     
     title.innerHTML = data.posts[0].title;
     title.style.textAlign = "left";
     blogPost.innerHTML = data.posts[0].excerpt;
     continueReading.setAttribute("href", (data.posts[0].URL));
+
+    title2.innerHTML = data.posts[1].title;
+    title2.style.textAlign = "left";
+    blogPost2.innerHTML = data.posts[1].excerpt;
+    continueReading2.setAttribute("href", (data.posts[1].URL));
 
     
 
