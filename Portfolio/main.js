@@ -139,5 +139,23 @@ fetch(url)
     return res.json();
   })
   .then((data) => {
-    console.log(data.posts[0]);
+    console.log(data);
+    let posts = [];
+    posts = data;
+
+    console.log(posts)
+
+    const title = document.querySelector(".blog__title");
+    const blogPost = document.querySelector('.blog__post');
+    const continueReading = document.querySelector('#continue-reading');
+    
+    
+    title.innerHTML = data.posts[0].title;
+    title.style.color = "black";
+    title.style.textAlign = "left";
+    blogPost.innerHTML = data.posts[0].excerpt;
+    continueReading.setAttribute("href", (data.posts[0].URL));
+
+    
+
   });
