@@ -151,7 +151,6 @@ fetch(url)
     
     
     title.innerHTML = data.posts[0].title;
-    title.style.color = "black";
     title.style.textAlign = "left";
     blogPost.innerHTML = data.posts[0].excerpt;
     continueReading.setAttribute("href", (data.posts[0].URL));

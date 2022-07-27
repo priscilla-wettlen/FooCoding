@@ -1,0 +1,22 @@
+.blog__title{
+  color: variables.$blackish;
+  font-size: 28px;
+  line-height: 100%;
+}
+
+.blog__post{
+  font-family: variables.$font2;
+  font-size: 22px;
+  color: variables.$blackish;
+}
+
+#continue-reading{
+  font-family: variables.$font2;
+  font-size: 16px;
+  text-decoration: none;
+  color: variables.$blackish;
+  &:hover{
+    color: variables.$blackish;
+    text-decoration: underline;
+  }
+}
