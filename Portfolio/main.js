@@ -145,11 +145,15 @@ fetch(url)
 
     console.log(posts)
 
+    const blogContent1 = document.querySelector('.blog__content-1');
+    const blogContent2 = document.querySelector('.blog__content-2')
     const title = document.querySelector(".blog__title-1");
     const blogPost = document.querySelector('.blog__post-1');
     const continueReading = document.querySelector('#continue-reading-1');
-    const img1 = document.createElement('img', '.blog__img');
-    const img2 = document.createElement('img', '.blog__img-2');
+    const img1 = document.createElement('img');
+    img1.classList.add('blog__img-1');
+    const img2 = document.createElement('img');
+    img2.classList.add('blog__img-2');
     const title2 = document.querySelector(".blog__title-2");
     const blogPost2 = document.querySelector('.blog__post-2');
     const continueReading2 = document.querySelector('#continue-reading-2');
@@ -160,16 +164,18 @@ fetch(url)
     blogPost.innerHTML = data.posts[0].excerpt;
     continueReading.setAttribute("href", (data.posts[0].URL));
     img1.setAttribute('src', (data.posts[0].featured_image));
-    img1.setAttribute('class', '.blog__img');
     img2.setAttribute('src', (data.posts[1].featured_image));
-    img2.setAttribute('class', '.blog__img-2');
-    blogPost.appendChild(img1);
+    blogContent1.appendChild(img1);
+    blogPost.appendChild(continueReading);
    
+    
+    blogContent2.appendChild(img2);
     title2.innerHTML = data.posts[1].title;
     title2.style.textAlign = "left";
     blogPost2.innerHTML = data.posts[1].excerpt;
     continueReading2.setAttribute("href", (data.posts[1].URL));
-    blogPost2.appendChild(img2);
+    blogPost2.appendChild(continueReading2);
+    
     
 
   });

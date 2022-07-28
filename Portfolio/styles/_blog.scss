@@ -7,7 +7,7 @@
 
 .blog__content-1, .blog__content-2{
   width: 500px;
-  padding-right: 100px;
+  padding-right: 300px;
 }
 
 .blog__title-1, .blog__title-2{
@@ -33,9 +33,10 @@
   }
 }
 
-img{
+.blog__img-1, .blog__img-2{
   object-fit: cover;
-  width: 300px;
-  height: 300px;
-  border-radius: 20px;
+  width: 400px;
+  height: 400px;
+  border-radius: 30px;
+  margin: 20px 0px 0px 0px;
 }
