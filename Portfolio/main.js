@@ -148,6 +148,7 @@ fetch(url)
     const title = document.querySelector(".blog__title-1");
     const blogPost = document.querySelector('.blog__post-1');
     const continueReading = document.querySelector('#continue-reading-1');
+    const img1 = document.createElement('img', '.blog__img');
     const title2 = document.querySelector(".blog__title-2");
     const blogPost2 = document.querySelector('.blog__post-2');
     const continueReading2 = document.querySelector('#continue-reading-2');
@@ -157,6 +158,9 @@ fetch(url)
     title.style.textAlign = "left";
     blogPost.innerHTML = data.posts[0].excerpt;
     continueReading.setAttribute("href", (data.posts[0].URL));
+    img1.setAttribute('src', (data.posts[0].attachments[559].URL));
+    img1.setAttribute('class', '.blog__img');
+    blogPost.appendChild(img1);
 
     title2.innerHTML = data.posts[1].title;
     title2.style.textAlign = "left";
