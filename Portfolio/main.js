@@ -149,6 +149,7 @@ fetch(url)
     const blogPost = document.querySelector('.blog__post-1');
     const continueReading = document.querySelector('#continue-reading-1');
     const img1 = document.createElement('img', '.blog__img');
+    const img2 = document.createElement('img', '.blog__img-2');
     const title2 = document.querySelector(".blog__title-2");
     const blogPost2 = document.querySelector('.blog__post-2');
     const continueReading2 = document.querySelector('#continue-reading-2');
@@ -158,15 +159,17 @@ fetch(url)
     title.style.textAlign = "left";
     blogPost.innerHTML = data.posts[0].excerpt;
     continueReading.setAttribute("href", (data.posts[0].URL));
-    img1.setAttribute('src', (data.posts[0].attachments[559].URL));
+    img1.setAttribute('src', (data.posts[0].featured_image));
     img1.setAttribute('class', '.blog__img');
+    img2.setAttribute('src', (data.posts[1].featured_image));
+    img2.setAttribute('class', '.blog__img-2');
     blogPost.appendChild(img1);
-
+   
     title2.innerHTML = data.posts[1].title;
     title2.style.textAlign = "left";
     blogPost2.innerHTML = data.posts[1].excerpt;
     continueReading2.setAttribute("href", (data.posts[1].URL));
-
+    blogPost2.appendChild(img2);
     
 
   });
