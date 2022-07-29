@@ -1,14 +1,28 @@
 footer{
   background-color: variables.$orangy;
   font-family: variables.$font2;
+  font-size: 22px;
   margin: 0px;
   padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer_content{
   padding: 20px;
 }
 
-.footer_text{
-  text-align: center;
+.footer__icons{
+  display: flex;
+  justify-content: center;
+}
+.fab{
+  padding-right: 20px;
+  font-size: 32px;
+  color: variables.$blackish;
+  &:hover{
+    color: variables.$khakhi;
+  }
 }

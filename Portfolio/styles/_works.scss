@@ -1,7 +1,7 @@
 #work {
   background-color: variables.$blackish;
-  height:650px;
-  padding: 50px;
+  height:auto;
+  padding: 0;
 }
 
 .sect_content-work{
@@ -35,6 +35,7 @@ h3{
   display: flex;
   flex-direction: column;
   width: 400px;
+  padding: 50px;
 }
 
 .section_content-work-info p{
@@ -50,13 +51,13 @@ h3{
 
 
 .svg{
-  filter: invert(95%) sepia(6%) saturate(968%) hue-rotate(324deg) brightness(95%) contrast(97%);
+  filter: invert(32%) sepia(27%) saturate(2119%) hue-rotate(325deg) brightness(121%) contrast(90%);
 }
 
 .carousel{
   position: relative;
-  width: 800px;
-  height: 600px;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
   //animation-name: appear;
   //animation-duration: 6s;
@@ -73,14 +74,13 @@ h3{
 
 .carousel__image{
   object-fit: cover;
-  width: 800px;
-  height: 500px;
-  border-radius: 10%;
+  width: 100%;
+  height: 700px;
 }
 
 .carousel__track-container{
-  width: 800px;
-  height: 630px;
+  width: 100%;
+  height: auto;
   position: relative;
   overflow: hidden;
   background-color: transparent;
@@ -91,7 +91,7 @@ h3{
   margin:0;
   list-style: none;
   position: relative;
-  height: 500px;
+  height: 780px;
   transition: transform 0.25s ease-in;
   
 }
@@ -100,7 +100,7 @@ h3{
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 800px;
+  width: 100%;
   //animation: fade;
   //animation-duration: 5s;
 }
@@ -123,12 +123,13 @@ h3{
   padding: 10px;
 }
 .left{
-  left: -40px;
+  left: 10px;
   cursor: pointer;
+  z-index: 5;
 }
 
 .right{
-  right: -40px;
+  right: 10px;
   cursor: pointer;
 }
 

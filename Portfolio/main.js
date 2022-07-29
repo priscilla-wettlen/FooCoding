@@ -24,7 +24,7 @@ const slideWidth = slides[0].getBoundingClientRect().width;
 //arrange slides to be next to each other
 
 const setSlidePosition = (slide, index) => {
-  slide.style.left = slideWidth * index + "px";
+  slide.style.left = slideWidth * index + 'px';
 } //index is the index of each array element
 
 slides.forEach(setSlidePosition); 

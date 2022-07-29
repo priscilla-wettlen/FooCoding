@@ -106,7 +106,7 @@
     <section id="contact">
       <div class="sect_content">
         <h2>contact me</h2>
-          <form action="contact.php" method="POST" class="contact_form">
+          <form action="contact.php" method="POST" onsubmit="reset(); return fail; alert(/Thank you! I'll be in contact with you as soon as possible./)" class="contact_form">
             <p class="form_txt">name*</p>
             <input type="text" name="name" id="name" required>
             <p class="form_txt">e-mail*</p>
@@ -138,7 +138,12 @@
     </section>
     <footer>
       <div class="footer_content">
-        <p class="footer_text">Copyright 2022, all rights reserved</p>
+        <p class="footer_text">Copyright Priscilla Silva 2022. All rights reserved.</p>
+        <div class="footer__icons">
+          <a href="https://github.com/priscilla-silva"><i class="fab fa-github"></i></a>
+          <a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/prissmacolor/"><i class="fab fa-instagram"></i></a>
+        </div>
       </div>
     </footer>
 

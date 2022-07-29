@@ -9,12 +9,16 @@
 }
 
 .about_pic{
+  margin: 0;
   padding: 0px 0px 0px 0px;
   overflow: hidden;
 }
 
 .img_ps{
-  object-fit:cover;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
   width:700px;
   height: 700px;
   //border-bottom-right-radius: 50%;
