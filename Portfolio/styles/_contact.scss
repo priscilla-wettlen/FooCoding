@@ -1,7 +1,14 @@
+
+
 .contact_form{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.contact__text{
+  font-family: variables.$font2;
+  font-size: 22px;
 }
 
 .form_txt{
