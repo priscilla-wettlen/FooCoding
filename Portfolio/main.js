@@ -129,6 +129,9 @@ dotNav.addEventListener('click', e => {
   hideShowArrows(slides, prevButton, nextButton, targetIndex);
 })
 
+//----------Contact Form Submit---------//
+
+
 
 //----------Blog API-------------//
 
